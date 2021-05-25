@@ -1,0 +1,6 @@
+- 👋 Hi, I’m @gerardoramos89
+- 👀 I’m interested in Software Testing 
+- 🌱 I’m currently learning ...
+- 💞️ I’m looking to collaborate on Software Testing 
+- 📫 How to reach me ...
+

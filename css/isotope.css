@@ -1,0 +1,124 @@
+/*------------------isotop items------------------*/
+.isotope, .isotope .isotope-item {
+  -webkit-transition-duration: 0.8s;
+  -moz-transition-duration: 0.8s;
+  -ms-transition-duration: 0.8s;
+  -o-transition-duration: 0.8s;
+  transition-duration: 0.8s;
+}
+.isotope {
+  -webkit-transition-property: height, width;
+  -moz-transition-property: height, width;
+  -ms-transition-property: height, width;
+  -o-transition-property: height, width;
+  transition-property: height, width;
+}
+.isotope .isotope-item {
+  overflow: visible;
+  -webkit-transition-property: -webkit-transform, opacity;
+  -moz-transition-property: -moz-transform, opacity;
+  -ms-transition-property: -ms-transform, opacity;
+  -o-transition-property: top, left, opacity;
+  transition-property: transform, opacity;
+}
+/**** disabling Isotope CSS3 transitions ****/
+.isotope.no-transition, .isotope.no-transition .isotope-item, .isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+  -moz-transition-duration: 0s;
+  -ms-transition-duration: 0s;
+  -o-transition-duration: 0s;
+  transition-duration: 0s;
+}
+/* End: Recommended Isotope styles */
+/* disable CSS transitions for containers with infinite scrolling*/
+.isotope.infinite-scrolling {
+  -webkit-transition: none;
+  -moz-transition: none;
+  -ms-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+
+#container{transition: all 0.3s ease-out;}
+#container2{transition: all 0.3s ease-out;}
+.isotope-box {
+  margin-left: 0px;
+  margin-right: 0px;
+  background: #000;
+}
+.isotope-box2 {
+  margin-left: 0px;
+  margin-right: 0px;
+  background: #fff;
+}
+
+.thumbnails {
+  padding-left: 0;
+}
+.element {
+  float: left;
+  height: auto !important;
+  display: block;
+  position: relative;
+  border: none;
+  margin: 0 !important;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-bottom: 0px!important;
+  padding: 0;
+}
+
+.grid-sizer {}
+.gutter-sizer {width: 0;}
+
+#options {float: right; padding-top: 45px;}
+#filters {position: relative; margin: 0; padding: 0; display: block; list-style: none;}
+#filters li{display: inline-block; padding: 0 35px 10px 0;}
+#filters li:last-child{padding-right: 0;}
+#filters li a { text-transform: uppercase; color: #000; letter-spacing: 0.1em; display: block; text-decoration: none; font-size: 14px;
+transition: all 0.3s ease-out;
+}
+#filters li a:hover {color: #fff;}
+#filters li a.selected {color: #fff;}
+
+.thumb-isotope {}
+.thumb-isotope .thumbnail{}
+.thumb-isotope .thumbnail a{position: relative;  display: block; text-decoration: none;}
+.thumb-isotope .thumbnail a figure{position: relative; margin: 0;}
+.thumb-isotope .thumbnail a img{width: 100%; -webkit-filter: grayscale(100%); filter: grayscale(100%);
+transition: all 0.3s ease-out;
+}
+.thumb-isotope .thumbnail a:hover img{-webkit-filter: grayscale(0%); filter: grayscale(0%);}
+
+#options2 {text-align: center;}
+#filters2 {position: relative; margin: 0; padding: 0; display: block; list-style: none;}
+#filters2 li{display: inline-block; padding: 0 35px 10px 0;}
+#filters2 li:last-child{padding-right: 0;}
+#filters2 li a { text-transform: uppercase; color: #000; letter-spacing: 0.1em; display: block; text-decoration: none; font-size: 14px;
+transition: all 0.3s ease-out;
+}
+#filters2 li a:hover {color: #f7b901;}
+#filters2 li a.selected {color: #f7b901;}
+
+.thumb-isotope2 {}
+.page-portfolio2 .thumb-isotope2 {margin-bottom: 30px;}
+.thumb-isotope2 .thumbnail{position: relative;}
+.thumb-isotope2 .thumbnail figure{position: relative; margin: 0; background: #f7b901; overflow: hidden;}
+.thumb-isotope2 .thumbnail figure:after{display: block; content: ''; border: 25px solid #fff; position: absolute; left: -25px; right: -25px; top: -25px; bottom: -25px;
+transition: all 0.3s ease-out;
+}
+.thumb-isotope2 .thumbnail:hover figure:after{left: 25px; right: 25px; top: 25px; bottom: 25px;border: 1px solid #fff;}
+.page-portfolio2 .thumb-isotope2 .thumbnail figure:after{display: none;}
+.thumb-isotope2 .thumbnail img{width: 100%; position: relative;
+transition: all 0.3s ease-out;
+}
+.thumb-isotope2 .thumbnail:hover img{opacity: 0.2;}
+.thumb-isotope2 .thumbnail .caption{position: absolute; left: 0; width: 100%; top: 50%; text-align: center; opacity: 0;
+-ms-transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    transition: all 0.3s ease-out;
+}
+.thumb-isotope2 .thumbnail:hover .caption{opacity: 1;}
+.thumb-isotope2 .thumbnail .caption .txt1{padding-bottom: 10px;}

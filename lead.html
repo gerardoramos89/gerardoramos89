@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com -->
+  <title>Bootstrap Theme Company Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: #818181;
+  }
+  h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #303030;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }  
+  .jumbotron {
+    background-color: #000000;
+    color: #fff;
+    padding: 100px 25px;
+    padding-left: 20%;
+    padding-right: 20%;
+    font-family: Montserrat, sans-serif;
+  }
+  .container-fluid {
+    padding: 60px 50px;
+  }
+  .bg-grey {
+    background-color: #f6f6f6;
+  }
+  .logo-small {
+    color: #C4302B;
+    font-size: 50px;
+  }
+  .logo {
+    color: #C4302B;
+    font-size: 200px;
+  }
+  .logo2 {
+    color: #3eb2cd;
+    font-size: 200px;
+  }
+  .thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+  }
+  .thumbnail img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+  }
+  .carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: #C4302B;
+  }
+  .carousel-indicators li {
+    border-color: #C4302B;
+  }
+  .carousel-indicators li.active {
+    background-color: #C4302B;
+  }
+  .item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
+  }
+  .item span {
+    font-style: normal;
+  }
+  .panel {
+    border: 1px solid #f4511e; 
+    border-radius:0 !important;
+    transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+    box-shadow: 5px 0px 40px red;
+  }
+  .panel-footer .btn:hover {
+    border: 1px solid #f4511e;
+    background-color: #fff !important;
+    color: #f4511e;
+  }
+  .paneltwitch {
+    border: 1px solid #6441a5; 
+    border-radius:0 !important;
+    transition: box-shadow 0.5s;
+  }
+  .paneltwitch:hover {
+    box-shadow: 5px 0px 40px purple;
+  }
+  .paneltwitch-footer .btn:hover {
+    border: 1px solid #f4511e;
+    background-color: #fff !important;
+    color: #f4511e;
+  }
+  .panelkick {
+    border: 1px solid #53FC18; 
+    border-radius:0 !important;
+    transition: box-shadow 0.5s;
+  }
+  .panelkick:hover {
+    box-shadow: 5px 0px 40px green;
+  }
+  .panelkick-footer .btn:hover {
+    border: 1px solid #f4511e;
+    background-color: #fff !important;
+    color: #f4511e;
+  }
+  .panel-heading {
+    color: #fff !important;
+    background-color: #C4302B !important;
+    padding: 25px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .panel-heading-twitch {
+    color: #fff !important;
+    background-color: #6441a5 !important;
+    padding: 25px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+    .panel-heading-kick {
+    color: #53FC18 !important;
+    background-color:  #000000 !important;
+    padding: 25px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+    background-color: white !important;
+  }
+  .panelkick-footer {
+    background-color: green !important;
+  }
+  .panel-footer h3 {
+    font-size: 32px;
+  }
+  .panel-footer h4 {
+    color: #aaa;
+    font-size: 14px;
+  }
+  .panel-footer .btn {
+    margin: 15px 0;
+    background-color: red;
+    color: #fff;
+  }
+  .navbar {
+    margin-bottom: 0;
+    background-color: #3dbdcf;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #32a2cb !important;
+    background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+  }
+  footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #C4302B;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+      width: 100%;
+      margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+      font-size: 150px;
+    }
+  }
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage">GRTEC</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">INICIO</a></li>
+        <li><a href="#services">SERVICIOS</a></li>
+        <li><a href="#portfolio">PORTAFOLIO</a></li>
+        <li><a href="#pricing">PRECIO</a></li>
+        <li><a href="#contact">CONTACTO</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron text-center">
+  <h1>Comprar Suscriptores y Seguidores</h1> 
+  <br>
+  <img src="https://pbs.twimg.com/media/FyYZ5JXWcAA000N?format=jpg&name=large"  class="img-responsive" alt="Cinque Terre">
+  <br>
+  <p>GrTec tiene el servicio en el mercado de social media marketing, donde puedes comprar suscriptores baratos para tu canal de YouTube y Twitch. </p> 
+  <form>
+    <div class="input-group">
+      <input type="email" class="form-control" size="50" placeholder="Email Address" required>
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-danger">Recibir noticias</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<!-- Container (About Section) -->
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>¡Date prisa para iniciar hoy mismo el proceso de suscriptores de YouTube!</h2><br>
+      <h4>¿Es buena idea comprar suscriptores de Youtube?</h4><br>
+      <p>Todo nuestro trabajo por crear contenido relevante y original, o las diferentes estrategias que utilicemos, pueden no servir de nada si no conseguimos nuevas suscripciones al canal. Nos guste o no, la realidad es que, tanto en Youtube, como en cualquier otra red social, el número de seguidores o suscriptores es lo que define la popularidad de un canal, una cuenta o una página.
+
+Comprar suscriptores Youtube es por ello una popular solución que cada vez más gente utiliza como un buen sistema para dar un impulso al canal y aumentar las suscripciones. Desde personas particulares o usuarios que están comenzando, a youtubers de éxito, pequeños negocios locales o grandes compañías, cualquiera que busque ganar notoriedad en esta red social necesita aumentar sus suscriptores en Youtube, y la página de 1Seguidores es la garantía perfecta para obtener nuevos seguidores.</p>
+      <br><button class="btn btn-default btn-lg">Get in Touch</button>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-signal logo"></span>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-globe logo2 slideanim"></span>
+    </div>
+    <div class="col-sm-8">
+      <h2>Cómo funciona</h2><br>
+      <h4><strong>1 Elige el paquete que prefieras:</strong> Elige el número de visitas, likes, seguidores y otras formas de interactuar que prefieras. Ofrecemos paquetes de distintos tamaños en función de tus necesidades..</h4><br>
+      <h4><strong>2 Introduce tu nombre de usuario o URL:</strong> EIntroduce la URL o el nombre de usuario donde quieras recibir el contenido, para que sepamos donde enviar tu pedido.</h4><br>
+            <h4><strong>3 ¡Completa el pago y recibe tu pedido! </strong> Elige tu método de pago, realiza el pago y luego revisa tu email para confirmarlo. Recibirás tu pedido en la ventana de pedido del paquete.</h4><br>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Services Section) -->
+<div id="services" class="container-fluid text-center">
+  <h2>SERVICIOS</h2>
+  <h4>Impulsa tu éxito en Twitch y YouTube con nuestros seguidores de calidad</h4>
+  <br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-off logo-small"></span>
+      <h4>Seguridad</h4>
+      <p>Privacidad y discreción garantizadas.</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-heart logo-small"></span>
+      <h4>Amor</h4>
+      <p>Atención al cliente especializada</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-lock logo-small"></span>
+      <h4>Trabajo</h4>
+      <p>Óptimos resultados</p>
+    </div>
+  </div>
+  <br><br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-leaf logo-small"></span>
+      <h4>Medio Ambiente</h4>
+      <p>100 % libre de riesgos</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-certificate logo-small"></span>
+      <h4>Garantizado</h4>
+      <p>Servicio garantizado</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-wrench logo-small"></span>
+      <h4 style="color:#303030;">Medios de Pago</h4>
+      <p>Sistema de pedido fácil</p>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div id="portfolio" class="container-fluid text-center bg-grey">
+  <h2>Portafolio</h2><br>
+  <h4>Podemos ayudar a los streamers y creadores de contenido que inician, a aumentar su audiencia y alcanzar sus metas.</h4>
+  <div class="row text-center slideanim">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="https://i.blogs.es/b675ae/twitch/840_560.jpeg" alt="Paris" width="400" height="300">
+        <p><strong>Twitch</strong></p>
+        <p>Al tener más seguidores, tu canal de Twitch se vuelve más visible en la plataforma. Esto significa que más personas verán tus transmisiones y tendrás más oportunidades de atraer a nuevos espectadores.</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="https://www.semana.com/resizer/ned1feCGHNUk8TB8oflOKOdTMK8=/1280x720/smart/filters:format(jpg):quality(80)/cloudfront-us-east-1.images.arcpublishing.com/semana/6BWSYZJFEBABBHCREQCNHH6SEQ.jpg" alt="New York" width="400" height="300">
+        <p><strong>Youtube</strong></p>
+        <p>Con un número significativo de seguidores, puedes ser elegible para programas de afiliados, patrocinios y donaciones. Muchas marcas y empresas buscan colaborar con streamers populares, lo que puede generar ingresos adicionales y oportunidades de crecimiento en tu carrera como creador de contenido.</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="https://estaticos-cdn.sport.es/clip/84b67618-34fe-4643-b9bc-46e70cc57688_alta-libre-aspect-ratio_default_0.jpg" alt="San Francisco" width="400" height="300">
+        <p><strong>Kick</strong></p>
+        <p>En una plataforma tan saturada como Twitch y Youtube, tener más seguidores en otras cuentas como kick te ayuda a destacarte entre la competencia. Puedes aparecer en los listados de canales populares y ganar exposición adicional, lo que atrae a más espectadores y potenciales seguidores.</p>
+      </div>
+    </div>
+  </div><br>
+  
+  <h2>Lo que dicen nuestras clientes</h2>
+  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <h4>"This company is the best. I am so happy with the result!"<br><span>Michael Roe, Vice President, Comment Box</span></h4>
+      </div>
+      <div class="item">
+        <h4>"One word... WOW!!"<br><span>John Doe, Salesman, Rep Inc</span></h4>
+      </div>
+      <div class="item">
+        <h4>"Could I... BE any more happy with this company?"<br><span>Chandler Bing, Actor, FriendsAlot</span></h4>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<!-- Container (Pricing Section) -->
+<div id="pricing" class="container-fluid">
+  <div class="text-center">
+    <h2>PRECIOS</h2>
+    <h4>Choose a payment plan that works for you</h4>
+  </div>
+  <div class="row slideanim">
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Paquete de seguidores básico Youtube</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>20</strong> Seguidores</p>
+          <p>seguidores de calidad</p>
+          <p>seguidores reales y activos</p>
+          <p>Entrega rápida en un plazo de <strong>48 horas.</strong></p>
+          <p>Soporte en linea</p>
+        </div>
+        <div class="panel-footer">
+          <h3>$4</h3>
+          <h4>Dolares</h4>
+          <button class="btn btn-lg">Solicitar</button>
+        </div>
+      </div>      
+    </div>     
+    <div class="col-sm-4 col-xs-12">
+      <div class="paneltwitch panel-default text-center">
+        <div class="panel-heading-twitch">
+          <h1>Paquete de seguidores básico Twitch</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>20</strong> Seguidores</p>
+          <p>seguidores de calidad</p>
+          <p>seguidores reales y activos</p>
+          <p>Entrega rápida en un plazo de <strong>48 horas.</strong></p>
+          <p>Soporte en linea</p>
+        </div>
+        <div class="panel-footer">
+          <h3>$4</h3>
+          <h4>Dolares</h4>
+          <button class="btn btn-lg">Solicitar</button>
+        </div>
+      </div>      
+    </div>       
+    <div class="col-sm-4 col-xs-12">
+      <div class="panelkick panel-default text-center">
+        <div class="panel-heading-kick">
+          <h1>Paquete de seguidores básico kick</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>20</strong> Seguidores</p>
+          <p>seguidores de calidad</p>
+          <p>seguidores reales y activos</p>
+          <p>Entrega rápida en un plazo de <strong>48 horas.</strong></p>
+          <p>Soporte en linea</p>
+        </div>
+        <div class="panel-footer">
+          <h3>$4</h3>
+          <h4>Dolares</h4>
+          <button class="btn btn-lg">Solicitar</button>
+        </div>
+      </div>      
+    </div>    
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid bg-grey">
+  <h2 class="text-center">CONTACTO</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Póngase en contacto con nosotros y nos pondremos en contacto con usted dentro de las 24 horas.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Santa Marta, CO</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +57 3183863469</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> coordtss2@gmai.com</p>
+    </div>
+    <div class="col-sm-7 slideanim">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Nombre" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comentarios" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Enviar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<!-- Image of location/map -->
+<center><img src="https://gerardoramos89.github.io/gerardoramos89/webEs/images/logoGrtec.jpg" class="img-responsive" style="width:30%"></center>
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>Tema contruido por <a href="https://www.linkedin.com/in/gerardoramosvargas/" title="VGerardo Ramos">GRTEC</a></p>
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+</body>
+</html>

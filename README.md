@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @gerardoramos89
-- 👀 I’m interested in Software Testing - Full Stack  
+- 👀 I’m interested in Software Testing - Full Stack  - React.js, Next.js, AWS, Azure Devops
 - 🌱 I’m currently learning ...
 - 💞️ I’m looking to collaborate on Software Testing 
 - 📫 How to reach me ...

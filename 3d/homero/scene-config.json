@@ -1,0 +1,10 @@
+{
+  "images": [],
+  "models": [
+    {
+      "url": "https://matteoperoni93.github.io/hosted-assets/donut-3d/scene.gltf",
+      "position": [0, 0, -5]
+    }
+  ],
+  "geometries": []
+}

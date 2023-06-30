@@ -42,16 +42,19 @@ class BasicCharacterController {
     this._LoadCube2();
   }
   _UpdateView() {
+
     var site_nome = "prueba30112022";// insira o nome do site sem usar espaco.
     var myip;
     var ip = myip;
+
+    
     var f_db = new Firebase("https://prueba30112022-default-rtdb.firebaseio.com/"+site_nome+"/");
     var usuario_db = f_db.push();
     var db_presensa = new Firebase("https://cliqueslinks.firebaseio.com/.info/connected/");
     db_presensa.on("value", function (snap) {
         if (snap.val()) {
             usuario_db.onDisconnect().remove();
-            usuario_db.set(""+ip+"");
+            usuario_db.set(""+ document.getElementById('ipId').innerHTML  +"");
         }
     });
     f_db.on("value", function (snap) {

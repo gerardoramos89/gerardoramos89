@@ -53,7 +53,7 @@ class BasicCharacterController {
     var db_presensa = new Firebase("https://cliqueslinks.firebaseio.com/.info/connected/");
     db_presensa.on("value", function (snap) {
         if (snap.val()) {
-            usuario_db.onDisconnect().remove();
+            //usuario_db.onDisconnect().remove();
             usuario_db.set(""+ document.getElementById('ipId').innerHTML  +"");
         }
     });

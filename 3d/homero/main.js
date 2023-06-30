@@ -24,6 +24,8 @@ class BasicCharacterController {
 
   _Init(params) {
     this._params = params;
+    this._view = 0;
+
     this._deceleration = new THREE.Vector3(-0.0015, -0.0001, -5.0);
     this._acceleration = new THREE.Vector3(1, 0.25, 50.0);
     this._velocity = new THREE.Vector3(0, 0, 0);
@@ -33,12 +35,32 @@ class BasicCharacterController {
     this._stateMachine = new CharacterFSM(
       new BasicCharacterControllerProxy(this._animations));
 
+    this._UpdateView();
     this._LoadModels();
     this._LoadCube();
     this._LoadImg();
     this._LoadCube2();
+  }
+  _UpdateView() {
+    var site_nome = "prueba30112022";// insira o nome do site sem usar espaco.
+    var myip;
+    var ip = myip;
+    var f_db = new Firebase("https://prueba30112022-default-rtdb.firebaseio.com/"+site_nome+"/");
+    var usuario_db = f_db.push();
+    var db_presensa = new Firebase("https://cliqueslinks.firebaseio.com/.info/connected/");
+    db_presensa.on("value", function (snap) {
+        if (snap.val()) {
+            usuario_db.onDisconnect().remove();
+            usuario_db.set(""+ip+"");
+        }
+    });
+    f_db.on("value", function (snap) {
+        //console.log("# of online users = " + snap.numChildren());
+        document.getElementById("newviews").innerHTML = snap.numChildren()
+    });
 
   }
+  
   _LoadCube2() {
     const boxWidth = 6;
     const boxHeight = 6;

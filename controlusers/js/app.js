@@ -61,7 +61,7 @@ function showPrivateInfo(user) {
   btnLogout.addEventListener('click', signoutUser);
   var path = window.location.origin;
 
-  window.location.href = path + '/controlusers/index.html';
+  window.location.href = path + '/gerardoramos89/controlusers/index.html';
 }
 
 function showLoginForm() {

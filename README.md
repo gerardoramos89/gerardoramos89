@@ -6,8 +6,8 @@
 
 Hi, I'm Gerardo Ramos, Engineer at systems graduated in 
 the year 2016. I am a lover of agile and efficient technology, 
-Experience in more than 5 years in development Backend, 
-Frontend and DevOps. Don't have afraid to use terminal 
+Experience in more than 5 years in development Backend Java, Net Core, PHP, 
+Frontend and DevOps for React, Angular, AndroidStudio, Flutter. Don't have afraid to use terminal 
 recently working with AWS tools and Azure, also managing 
 databases data, pipelines and dashboards for monitoring 
 of the software. excited to learn more about data science 

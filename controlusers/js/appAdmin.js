@@ -38,7 +38,7 @@ function showPrivateInfo(user) {
 
 function showLoginForm() {
   var path = window.location.origin;
-  window.location.href = path + '/sign-in.html';
+  window.location.href = path + '/controlusers/sign-in.html';
 }
 
 // Firebase defs

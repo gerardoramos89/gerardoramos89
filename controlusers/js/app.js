@@ -60,7 +60,8 @@ function showPrivateInfo(user) {
   const btnLogout = document.getElementById('btnLogout');
   btnLogout.addEventListener('click', signoutUser);
   var path = window.location.origin;
-  window.location.href = path + '/index.html';
+
+  window.location.href = path + '/controlusers/index.html';
 }
 
 function showLoginForm() {

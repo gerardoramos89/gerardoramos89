@@ -1,227 +1,178 @@
-# Autenticación con Firebase en 5 minutos
+# [Material Dashboard 2](http://demos.creative-tim.com/material-dashboard/pages/dashboard.html?ref=readme-md2) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/intent/tweet?url=https://github.com/gerardoramos89/gerardoramos89/product/material-dashboard&text=Check%20Material%20Dashboard%202%20made%20by%20@CreativeTim%20#webdesign%20#dashboard%20#materialdesign%20#html%20https://github.com/gerardoramos89/gerardoramos89/product/material-dashboard) [![Discord](https://badgen.net/badge/icon/discord?icon=discord&label)](https://discord.gg/FhCJCaHdQa)
 
-Con Firebase Authentication podemos almacenar y administrar el acceso y los permisos de nuestros usuarios sin pagar un solo centavo. En este tutorial vamos a construir una aplicación de ejemplo para implementar los métodos de registro, login y logout con email y password.
+![version](https://img.shields.io/badge/version-3.1.0-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/material-dashboard.svg)](https://github.com/creativetimofficial/material-dashboard/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/material-dashboard.svg)](https://github.com/creativetimofficial/material-dashboard/issues?q=is%3Aissue+is%3Aclosed)
 
-No te preocupes si tu negocio o página web son un poco más complicados que este ejemplo. Los pasos a seguir son casi los mismos. Sin embargo, si quieres profundizar muchísimo más y aprender a utilizar **todos** los servicios de Firebase, puedes tomar el [Curso de Firebase para Web](https://platzi.com/cursos/firebase-web/) :ok_hand::tada:.
+![Image](https://s3.amazonaws.com/creativetim_bucket/products/50/original/material-dashboard.jpg?1634648873)
 
-- DEMO: [juandc.co/platzi-firebase-simple-auth](http://juandc.co/platzi-firebase-simple-auth/)
-- REPO: [github.com/juandc/platzi-firebase-simple-auth](https://github.com/juandc/platzi-firebase-simple-auth)
-- Tutorial: [Autenticación con Firebase en 5 minutos - Platzi Blog](https://platzi.com/blog/autenticacion-con-firebase-en-5-minutos/)
+[Material Dashboard](https://github.com/gerardoramos89/gerardoramos89/product/material-dashboard) is a free Material Bootstrap Admin with a fresh, new design inspired by Google's Material Design. We are very excited to introduce our take on the material concepts through an easy to use and beautiful set of components. Material Dashboard was built over the popular Bootstrap framework and it comes with a couple of third-party plugins redesigned to fit in with the rest of the elements.
 
-## Creación del proyecto
+Material Dashboard makes use of light, surface and movement. The general layout resembles sheets of paper following multiple different layers, so that the depth and order is obvious. The navigation stays mainly on the left sidebar and the content is on the right inside the main panel.
 
-Comenzamos creando un nuevo proyecto en la [Consola de Firebase](https://console.firebase.google.com):
+This product came as a result of users asking for a material dashboard after we released our successful [Material Kit](https://github.com/gerardoramos89/gerardoramos89/product/material-kit). We developed it based on your feedback and it is a powerful bootstrap admin dashboard, which allows you to build products like admin panels, content managements systems and CRMs.
 
-![](https://raw.githubusercontent.com/juandc/platzi-firebase-simple-auth/master/.GITHUB/AHHHH-68ea9619-ce1f-4216-9fed-1a80a2ee2229.jpg)
+Material Dashboard comes with 5 color filter choices for both the sidebar and the card headers (blue, green, orange, red and purple) and an option to have a background image on the sidebar.
 
-Con el proyecto creado podemos entrar a la sección de autenticación y ubicar la configuración de inicio de sesión:
+Special thanks go to:
+- [Robert McIntosh](https://github.com/mouse0270/bootstrap-notify) for the notification system.
+- [Chartist](https://gionkunz.github.io/chartist-js/) for the wonderful charts.
+We are very excited to share this dashboard with you and we look forward to hearing your feedback!
+- [Nepcha Analytics](https://nepcha.com?ref=readme) for the analytics tool. Nepcha is already integrated with Material Dashboard. You can use it to gain insights into your sources of traffic.
 
-![](https://raw.githubusercontent.com/juandc/platzi-firebase-simple-auth/master/.GITHUB/AHHHH-4ef8e4e9-d6b5-4f85-9f4e-2c72f365794b.jpg)
 
-Esta sección nos permite habilitar o deshabilitar diferentes alternativas para que nuestros usuarios se registren a la aplicación. Podemos usar correo y contraseña, redes sociales como Twitter y Facebook, con mensajes de texto al teléfono, links de autenticación por correo electrónico, entre otras.
+## Table of Contents
 
-Incluso podemos configurar nuestra aplicación para soportar múltiples métodos de registro y darle más comodidades a nuestros usuarios. Por ahora (para no alargar el tutorial), solo vamos a habilitar el registro de usuarios con correo y contraseña.
+- [Material Dashboard 2  ](#material-dashboard-2--)
+  - [Table of Contents](#table-of-contents)
+  - [Versions](#versions)
+  - [Demo](#demo)
+  - [Quick start](#quick-start)
+  - [Documentation](#documentation)
+  - [File Structure](#file-structure)
+  - [Browser Support](#browser-support)
+  - [Resources](#resources)
+  - [Reporting Issues](#reporting-issues)
+  - [Upgrade to Premium version](#upgrade-to-premium-version)
+  - [Technical Support or Questions](#technical-support-or-questions)
+  - [Licensing](#licensing)
+  - [Useful Links](#useful-links)
+        - [Social Media](#social-media)
 
-Después de esto solo nos queda copiar la configuración web de firebase para pegarla más adelante en nuestro archivo HTML:
 
-![](https://raw.githubusercontent.com/juandc/platzi-firebase-simple-auth/master/.GITHUB/AHHHH-a71b3fd7-715b-4ff9-8edc-30dcb36a9754.jpg)
 
-## Setup: Configuración inicial
+## Versions
 
-La base de nuestra aplicación es un archivo HTML con diferentes secciones: un formulario de registro, secciones para guardar la información "privada" de nuestros usuarios (por ahora solo dice "Cargando...") y algunas etiquetas de `&lt;script&gt;` para importar las herramientas de Firebase:
+[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/html-logo.jpg?raw=true" width="60" height="60" />](https://github.com/gerardoramos89/gerardoramos89/product/material-dashboard)[<img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/figma-logo.jpg" width="60" height="60" />](https://github.com/gerardoramos89/gerardoramos89/product/material-tailwind-dashboard-react) [<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/react-logo.jpg?raw=true" width="60" height="60" />](https://github.com/gerardoramos89/gerardoramos89/product/material-dashboard-react)[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/vue-logo.jpg?raw=true" width="60" height="60" />](https://github.com/gerardoramos89/gerardoramos89/product/vue-material-dashboard)[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/angular-logo.jpg?raw=true" width="60" height="60" />](https://github.com/gerardoramos89/gerardoramos89/product/material-dashboard-angular2)[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/react-native-logo.jpg?raw=true" width="60" height="60" />](https://github.com/gerardoramos89/gerardoramos89/product/material-kit-react-native)[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/laravel-logo.jpg?raw=true" width="60" height="60" />](https://github.com/gerardoramos89/gerardoramos89/product/material-dashboard-laravel)[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/vuetify-logo.jpg?raw=true" width="60" height="60" />](https://github.com/gerardoramos89/gerardoramos89/product/vuetify-material-dashboard)[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/django-logo.jpg?raw=true" width="60" height="60" />](https://github.com/gerardoramos89/gerardoramos89/product/material-dashboard-django)[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/nextjs-logo.jpg?raw=true" width="60" height="60" />](https://github.com/gerardoramos89/gerardoramos89/product/nextjs-material-dashboard)[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/flask-logo.jpg?raw=true" width="60" height="60" />](https://github.com/gerardoramos89/gerardoramos89/product/material-dashboard-flask)[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/aspnet-logo.jpg?raw=true" width="60" height="60" />](https://github.com/gerardoramos89/gerardoramos89/product/material-dashboard-react-asp-net)[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/nodejs-logo.jpg?raw=true" width="60" height="60" />](https://github.com/gerardoramos89/gerardoramos89/product/material-dashboard-react-nodejs)
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta http-equiv="Content-Type" content="charset=UTF-8" />
-  <title>Autenticación con Firebase en 5 minutos</title>
-</head>
-<body>
-  <h2>Información Privada</h2>
-  
-  <div id="loginFormUI">
-    <p>Por favor inicia sesión para acceder a tu información</p>
-  
-    <form name="loginForm">
-      <input
-        type="email"
-        name="email"
-        placeholder="Correo Electronico"
-        required
-      />
-      <input
-        type="password"
-        name="password"
-        placeholder="Contraseña"
-        required
-      />
-      <input
-        type="radio"
-        name="isLoginOrSignup"
-        id="radioIsLogin"
-        value="isLogin"
-        checked
-      />
-      <label for="radioIsLogin">Entrar a mi cuenta</label>
 
-      <input
-        type="radio"
-        name="isLoginOrSignup"
-        id="radioIsSignup"
-        value="isSignup"
-      />
-      <label for="radioIsSignup">Crear cuenta</label>
+| Bootstrap 5 | Bootstrap 4 | Bootstrap 3 | Dark HTML |
+| --- | --- | --- | --- |
+| [![Material Dashboard  HTML](https://s3.amazonaws.com/creativetim_bucket/products/50/original/material-dashboard.jpg?1634648873)](https://github.com/gerardoramos89/gerardoramos89/product/material-dashboard)  | [![Material Dashboard  Bootstrap 4](https://s3.amazonaws.com/creativetim_bucket/products/537/original/opt_md_thumbnail.jpeg?1634047548)](https://github.com/gerardoramos89/gerardoramos89/product/material-dashboard-bs4)  | [![Material Dashboard  Bootstrap 3](https://s3.amazonaws.com/creativetim_bucket/products/78/original/opt_mdp_thumbnail.jpg?1521133551)](https://github.com/gerardoramos89/gerardoramos89/product/material-dashboard-bs4)  | [![Material Dashboard Dark Edition](https://s3.amazonaws.com/creativetim_bucket/products/95/original/opt_mdb_thumbnail.jpg?1535551949)](https://github.com/gerardoramos89/gerardoramos89/product/material-dashboard-dark) |
 
-      <button id="btnLogin">Acceder</button>
-    </form>
-  </div>
-  
-  <div id="privateInfo">
-    <p class="loading">Cargando...</p>
-  </div>
+| React | Tailwind | Vue | Angular |
+| --- | --- | --- | --- |
+| [![Material Dashboard  React](https://s3.amazonaws.com/creativetim_bucket/products/488/original/material-tailwind-react-dashboard.jpg?1667367968)](https://github.com/gerardoramos89/gerardoramos89/product/material-tailwind-dashboard-react) | [![Material Tailwind Dashboard React](https://s3.amazonaws.com/creativetim_bucket/products/71/original/material-dashboard-react.jpg?1638950990)](https://github.com/gerardoramos89/gerardoramos89/product/material-dashboard-react) | [![Vue Material Dashboard](https://s3.amazonaws.com/creativetim_bucket/products/81/original/opt_md_vue_thumbnail.jpg?1534938464)](https://github.com/gerardoramos89/gerardoramos89/product/vue-material-dashboard)  | [![Material Dashboard  Angular](https://s3.amazonaws.com/creativetim_bucket/products/53/original/opt_md_angular_thumbnail.jpg?1551358074)](https://github.com/gerardoramos89/gerardoramos89/product/material-dashboard-angular2) |
 
-  <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase.js">
-  &lt;script&gt;
-  <script/>
-    // Initialize Firebase
-    var config = {
-      apiKey: "API_KEY_FROM_FIREBASE",
-      authDomain: "AUTH_DOMAIN.firebaseapp.com",
-      databaseURL: "https://DATABASE_URL.firebaseio.com",
-      projectId: "PROJET_ID",
-      storageBucket: "STORAGE_BUCKET.appspot.com",
-      messagingSenderId: "MESSAGING_SENDER_ID"
-    };
-    firebase.initializeApp(config);
-  &lt;script&gt;
-</body>
-</html>
+| Vuetify | React Native | Nextjs | Nodejs |
+| --- | --- | --- | ---  |
+| [![Material Dashboard  Vuetify](https://s3.amazonaws.com/creativetim_bucket/products/100/original/opt_md_vuetify_thumbnail.jpg)](https://github.com/gerardoramos89/gerardoramos89/product/vuetify-material-dashboard)  | [![React Native](https://s3.amazonaws.com/creativetim_bucket/products/144/original/opt_mkrn_thumbnail.jpg)](https://github.com/gerardoramos89/gerardoramos89/product/material-kit-react-native)  | [![Nextjs Material Dashboard](https://s3.amazonaws.com/creativetim_bucket/products/341/original/opt_md_nextjs_thumbnail.jpg)](https://github.com/gerardoramos89/gerardoramos89/product/nextjs-material-dashboard)  | [![Material Dashboard React Nodejs](https://s3.amazonaws.com/creativetim_bucket/products/157/original/react-material-dashboard-nodejs.jpg?1680251614)](https://github.com/gerardoramos89/gerardoramos89/product/material-dashboard-react-nodejs)
+
+| Laravel | Asp.NET | Django | Flask |
+| --- | --- | --- | ---  |
+| [![Material Dashboard Laravel](https://s3.amazonaws.com/creativetim_bucket/products/154/original/material-dashboard-laravel.jpg?1664460694)](https://github.com/gerardoramos89/gerardoramos89/product/material-dashboard-laravel) | [![Asp.NET](https://s3.amazonaws.com/creativetim_bucket/products/397/original/opt_md_aspnet_thumbnail.jpg)](https://github.com/gerardoramos89/gerardoramos89/product/material-dashboard-react-asp-net)  | [![Material Dashboard Django](https://s3.amazonaws.com/creativetim_bucket/products/337/original/opt_md_django_thumbnail.jpg)](https://github.com/gerardoramos89/gerardoramos89/product/material-dashboard-django)  | [![Material Dashboard Flask](https://s3.amazonaws.com/creativetim_bucket/products/338/original/opt_md_flask_thumbnail.jpg)](https://github.com/gerardoramos89/gerardoramos89/product/material-dashboard-flask)
+
+
+## Demo
+
+- [Start page](https://demos.creative-tim.com/material-dashboard/examples/dashboard.html)
+- [User profile page](https://demos.creative-tim.com/material-dashboard/examples/user.html)
+- [Tables page ](https://demos.creative-tim.com/material-dashboard/examples/tables.html)
+- [Maps Page](https://demos.creative-tim.com/material-dashboard/examples/map.html)
+- [Notifications page](https://demos.creative-tim.com/material-dashboard/examples/notifications.html)
+
+[View More](https://demos.creative-tim.com/material-dashboard/examples/dashboard.html).
+
+
+## Quick start
+
+- `npm i material-dashboard`
+- Clone the repo: `git clone https://github.com/creativetimofficial/material-dashboard.git`.
+- [Download from Github](https://github.com/creativetimofficial/material-dashboard/archive/master.zip).
+- [Download from Creative Tim](https://github.com/gerardoramos89/gerardoramos89/product/material-dashboard).
+
+
+## Documentation
+The documentation for the Material Dashboard is hosted at our [website](https://demos.creative-tim.com/material-dashboard/docs/2.1/getting-started/introduction.html).
+
+
+## File Structure
+Within the download you'll find the following directories and files:
+
+```
+material-dashboard
+    ├── assets
+    │   ├── css
+    │   ├── fonts
+    │   ├── img
+    │   ├── js
+    │   │   ├── core
+    │   │   ├── plugins
+    │   │   └── material-dashboard.js
+    │   │   └── material-dashboard.js.map
+    │   │   └── material-dashboard.min.js
+    │   └── scss
+    │       ├── material-dashboard
+    │       └── material-dashboard.scss
+    ├── docs
+    │   ├── documentation.html
+    ├── pages
+    ├── CHANGELOG.md
+    ├── gulpfile.js
+    ├── package.json
 ```
 
-Lo más importante por ahora es el formulario. Solo tiene 3 campos: email, contraseña y un input de tipo `radio` para elegir entre “Crear una cuenta” o “Entrar a mi cuenta”.
 
-Nuestra tarea es mostrar este formulario cuando los usuarios no han realizado su autenticación y ocultarlo cuando han ingresado o se han registrado con éxito. También debemos añadir un botón para cerrar la sesión y cambiar el texto “Cargando...” por la información real de nuestros usuarios.
+## Browser Support
 
-## Formulario de registro
+At present, we officially aim to support the last two versions of the following browsers:
 
-Vamos a "escuchar" las acciones de _submit_ de nuestro formulario. Es decir, vamos a programar una función que debe ejecutarse cuando los usuarios hacen click en el botón de “_Acceder_” para saber cuándo registrar o iniciar la sesión de los usuarios.:
+<img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/chrome.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/firefox.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/edge.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/safari.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/opera.png" width="64" height="64">
 
-```js
-const form = document.forms['loginForm'];
-form.addEventListener('submit', function handleFormSubmit(event) {
-  event.preventDefault();
 
-  const email = form['email'].value;
-  const password = form['password'].value;
-  const isLoginOrSignup = form['isLoginOrSignup'].value;
 
-  if (isLoginOrSignup === 'isLogin') {
-    return loginUser(email, password);
-  }
+## Resources
+- Demo: <https://demos.creative-tim.com/material-dashboard/pages/dashboard.html>
+- Download Page: <https://github.com/gerardoramos89/gerardoramos89/product/material-dashboard>
+- Documentation: <https://demos.creative-tim.com/material-dashboard/docs/2.1/getting-started/introduction.html>
+- License Agreement: <https://github.com/gerardoramos89/gerardoramos89/license>
+- PRO Version: <https://github.com/gerardoramos89/gerardoramos89/product/material-dashboard-pro>
+- Support: <https://github.com/gerardoramos89/gerardoramos89/contact-us>
+- Issues: [Github Issues Page](https://github.com/creativetimofficial/material-dashboard/issues)
+- [Material Kit](https://github.com/gerardoramos89/gerardoramos89/product/material-kit?ref=github-md-free) - For Front End Development
+- [Nepcha Analytics](https://nepcha.com?ref=readme) - Analytics tool for your website
 
-  return createUser(email, password);
-});
-```
+## Reporting Issues
 
-Ahora, vamos a programar las funciones `createUser`, `loginUser` y `signoutUser` para guardar la información de nuestros usuarios en la base de datos de Firebase:
+We use GitHub Issues as the official bug tracker for the Material Dashboard. Here are some advices for our users that want to report an issue:
 
-```js
-function createUser(email, password) {
-	console.log('Creando el usuario con email ' + email);
+1. Make sure that you are using the latest version of the Material Dashboard. Check the CHANGELOG from your dashboard on our [website](https://github.com/gerardoramos89/gerardoramos89/).
+2. Providing us reproducible steps for the issue will shorten the time it takes for it to be fixed.
+3. Some issues may be browser specific, so specifying in what browser you encountered the issue might help.
 
-	firebase.auth().createUserWithEmailAndPassword(email, password)
-	.then(function (user) {
-		console.log('¡Creamos al usuario!');
-	})
-	.catch(function (error) {
-		console.error(error)
-	});
-}
+## Upgrade to Premium version
 
-function loginUser(email, password) {
-	console.log('Loging user ' + email);
+Are you looking for more components? Please check our Premium Version of Material Dashboard [here](https://github.com/gerardoramos89/gerardoramos89/product/material-dashboard-pro/)
 
-	firebase.auth().signInWithEmailAndPassword(email, password)
-	.then(function (user) {
-		console.log('Credenciales correctas, ¡bienvenido!');
-	})
-	.catch(function (error) {
-		console.log(error);
-	});
-}
+## Technical Support or Questions
 
-function signoutUser() {
-	firebase.auth().signOut();
-}
-```
+If you have questions or need help integrating the product please [contact us](https://github.com/gerardoramos89/gerardoramos89/contact-us) instead of opening an issue.
 
-¡Listo! Ya podemos probar nuestra aplicación. Cuando creamos un usuario de prueba, la consola del navegador nos muestra la respuesta que esperamos, nos está indicando que el usuario fue creado sin problemas:
 
-![](https://raw.githubusercontent.com/juandc/platzi-firebase-simple-auth/master/.GITHUB/AHHHH-d1500475-aeac-4307-804f-406aec3f7dea.jpg)
 
-Además, podemos visualizar la lista de usuarios creados en nuestra aplicación desde la consola de Firebase:
+## Licensing
 
-![](https://raw.githubusercontent.com/juandc/platzi-firebase-simple-auth/master/.GITHUB/AHHHH-f649a6fa-d3d2-4920-9f52-66b8086f2489.jpg)
+- Copyright 2023 Creative Tim (https://github.com/gerardoramos89/gerardoramos89/)
+- Licensed under MIT (https://github.com/creativetimofficial/material-dashboard/blob/master/LICENSE.md)
 
-## Interacción desde Javascript - JS POWER!
 
-Ya aprendimos a registrar usuarios en la base de datos de Firebase. Es hora de programar nuestra aplicación para responder de maneras diferentes cuando un usuario está o no autenticado.
 
-Vamos a utilizar el método `firebase.auth().onAuthStateChanged()` para ejecutar el código necesario cada vez que el usuario inicie o cierre sesión:
+## Useful Links
 
-```js
-firebase.auth().onAuthStateChanged(function handleAuthState(user) {
-	if (user) {
-		showPrivateInfo()
-		return console.log('Habemus user 🎉');
-	}
+- [More products](https://github.com/gerardoramos89/gerardoramos89/templates?ref=readme-sudp) from Creative Tim
+- [Tutorials](https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w)
+- [Freebies](https://github.com/gerardoramos89/gerardoramos89/bootstrap-themes/free?ref=readme-sudp) from Creative Tim
+- [Affiliate Program](https://github.com/gerardoramos89/gerardoramos89/affiliates/new?ref=readme-sudp) (earn money)
+- [Bundles](https://github.com/gerardoramos89/gerardoramos89/bundles)
+- [Material Design](https://github.com/gerardoramos89/gerardoramos89/design-system/material)
+- [Get Discount](https://github.com/gerardoramos89/gerardoramos89/coupon)
 
-	showLoginForm()
-	return console.log('No habemus user 😭');
-});
-```
+##### Social Media
 
-Cuando los usuarios estén autenticados, debemos ocultar el formulario de registro y mostrar la información personalizada para cada usuario, además de un botón para salir o hacer logout.
+Twitter: <https://twitter.com/CreativeTim>
 
-Para esto, vamos a crear las funciones `showPrivateInfo` y `showLoginInfo` que se van a encargar de mostrar u ocultar parte de nuestra UI dependiendo del estado de autenticación de cada usuario.
+Facebook: <https://www.facebook.com/CreativeTim>
 
-```js
-function showPrivateInfo(user) {
-	const loginForm = document.getElementById('loginFormUI');
-	loginForm.style.display = 'none';
+Dribbble: <https://dribbble.com/creativetim>
 
-	const privateInfo = document.getElementById('privateInfo');
-	privateInfo.style.display = 'block';
-	privateInfo.innerHTML = `
-		<p>Información confidencial</p>
-		<button id="btnLogout" class="button">Logout</button>
-	`;
+TikTok: <https://tiktok.com/@creative.tim>
 
-	const btnLogout = document.getElementById('btnLogout');
-	btnLogout.addEventListener('click', signoutUser);
-}
-
-function showLoginForm() {
-	const loginForm = document.getElementById('loginFormUI');
-	loginForm.style.display = 'block';
-
-	const privateInfo = document.getElementById('privateInfo');
-	privateInfo.style.display = 'none';
-	privateInfo.innerHTML = `
-		<p>Nada que mostrar, tienes que registrarte</p>
-	`;
-}
-```
-
-Ahora si, nuestra aplicación muestra y oculta la información de los usuarios cuando cambia su estado de autenticación. Podemos configurar los estilos CSS y añadir todas las interacciones que necesiten nuestras aplicaciones (autenticar usuarios con redes sociales, por ejemplo), solo hace falta tu imaginación y un poco de investigación para añadir el resto de código que nos ocurra.
-
-En mi caso, este fue el resultado y puedes ver el demo a continuación: [juandc.co/platzi-firebase-auth](http://juandc.co/platzi-firebase-simple-auth/):
-
-![](https://github.com/juandc/platzi-firebase-simple-auth/blob/master/.GITHUB/AHHHH-85f4c3e2-71c7-4390-805e-32338ec9786d.jpg?raw=true)
-
-## Conclusión
-
-Firebase tiene muchos otros servicios muy interesantes y puedes aprender un poco sobre ellos en este artículo de nuestro profe @jjgomez: [Firebase, una plataforma usada por millones de aplicaciones](https://platzi.com/blog/firebase-una-plataforma-usada-por-millones-de-aplicaciones/).
-
-Te invito de nuevo a tomar el [Curso de Firebase para Web](https://platzi.com/cursos/firebase-web/) para construir proyectos y aplicaciones increíbles a una velocidad de desarrollo casi inmejorable. **¡#NuncaParesDeAprender!**
+Instagram: <https://instagram.com/creativetimofficial>

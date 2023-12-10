@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Registro de Clientes</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+  <nav class="navbar navbar--sticky">
+    <ul class="navbar-list">
+      <li class="navbar-item">
+        <a
+          class="navbar-link"
+          style="--navbarLinkIcon: url(../images/favicon.ico);"
+          href="https://gerardoramos89.github.io/gerardoramos89/webEs/images/logoGrtec.jpg"
+        >
+          Registro de Clientes y verificacion de utilidades
+        </a>
+      </li>
+      <li class="navbar-item">
+        <a
+          class="navbar-link"
+          style="--navbarLinkIcon: url(../images/github_favicon.png);"
+          href="https://github.com/gerardoramos89"
+        >
+          Repositorio en Github
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <main role="application">
+    <header class="hero">
+      <article class="hero-info">
+        <h1 class="hero-title">
+          página web para informar a los usuarios sobre el registro de clientes, el estado y el total de utilidades 😎✌
+        </h1>
+        <p class="hero-description">
+          ¡Bienvenido de nuevo! Por favor, inicia sesión para acceder a tu panel de control personalizado
+        </p>
+        <p class="hero-description">
+          Inicia sesión para gestionar tus clientes y obtener información actualizada sobre el estado de tu negocio.
+        </p>
+      </article>
+    </header>
+
+    <section class="appInfo">
+      <article class="privateInfo">
+        <h2 class="privateInfo-title">Información Privada y delicada 🤐</h2>
+        
+        <div id="loginFormUI" class="form-container">
+          <p>Por favor, inicia sesión para mostrar tu información 🖖...</p>
+
+          <form class="loginForm" name="loginForm">
+            <input
+              class="input"
+              type="email"
+              name="email"
+              placeholder="Correo Electronico"
+              required
+            />
+            <input
+              class="input"
+              type="password"
+              name="password"
+              placeholder="Contraseña"
+              required
+            />
+
+            <div class="form-radioContainer">
+              <input type="radio" name="isLoginOrSignup" id="radioIsLogin" value="isLogin" checked />
+              <label for="radioIsLogin">Login</label>
+
+              <input type="radio" name="isLoginOrSignup" id="radioIsSignup" value="isSignup" disabled />
+              <label for="radioIsSignup">SignUp</label>
+            </div>
+
+            <button id="btnLogin" class="button">Iniciar sesión</button>
+          </form>
+        </div>
+
+        <div id="hiddenPrivateInfo">
+          <p class="loading">Cargando...</p>
+        </div>
+      </article>
+      
+      <article class="publicInfo">
+        <h2 class="privateInfo-title">Información General 📝</h2>
+      
+        <p>Para tener tu usuario y contraseña, debes comunicarte con la adminsitracion del proyecto</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <p class="footer-text">
+        Este proyecto NO es esponsoreado por Platso™ bajo la suma de 37 plastovillarolocoins, equivalente a 💲1 moneda(s) estafadunizonsa 💵.
+      </p>
+      <p class="footer-text">
+        Favor NO replicar NI aplicar leyes anticorrupción a este proyecto 🙏.
+      </p>
+      <p class="footer-text">
+        Las demandas son legales 🔨 pero NO pienso tener mascotas 🐈🐕.
+      </p>
+    </div>
+
+    <div class="footer-content">
+      <ul class="footer-list">
+        <li class="footer-item">
+          <a
+            class="footer-link"
+            href="https://github.com/gerardoramos89"
+            target="blank"
+          >
+            Github
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-auth.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+</html>

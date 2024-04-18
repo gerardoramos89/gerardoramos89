@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <met#aeb3b8et="utf-8">
-        <title>Gerardo Ramos</title>
+<html lang="es">
+<head>
+        <title data-translate-key="text0">Gerardo Ramos</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="Free Website Template" name="keywords">
         <meta content="Free Website Template" name="description">
+        <meta charset="UTF-8">
 
         <!-- Favicon -->
         <link href="img/favicon.ico" rel="icon">
@@ -35,7 +35,7 @@
         <!-- Spinner Start -->
         <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
             <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-                <span class="sr-only">Loading...</span>
+                <span class="sr-only" data-translate-key="text1">Loading...</span>
             </div>
         </div>
         <!-- Spinner End -->
@@ -45,16 +45,22 @@
                 <div class="col-lg-4 sticky-lg-top vh-100">
                     <div class="d-flex flex-column h-100 text-center overflow-auto shadow">
                         <img class="w-100 img-fluid mb-4" src="img/profile.jpg" alt="Image">
-                        <h1 class="text-primary mt-2">Gerardo Ramos</h1>
+                        <h1 class="text-primary mt-2">Gerardo Ramos V</h1>
+                        <h2 lang="es" data-translate-key="text2">¡Sitio en Proceso de Construcción!</h2>
+                        <label for="language" data-translate-key="text3">Selecciona un idioma:</label>
+                        <select id="language" name="language" onchange="translatefun()">
+                          <option value="es" class="flag-es" data-translate-key="textEspanol" selected>Español</option>
+                          <option value="en" class="flag-en" data-translate-key="textIngles" >Inglés</option>
+                          <!-- <option value="de" class="flag-de" data-translate-key="textAleman">Alemán</option>
+                          <option value="fr" class="flag-fr" data-translate-key="textFrances">Francés</option>
+                          <option value="pt" class="flag-pt" data-translate-key="textPortugues">Portugués</option>     
+                          <option value="pt" class="flag-pt" data-translate-key="textChino">现代标准汉语</option>      -->
+                          <!-- Agrega más opciones según tus necesidades -->
+                        </select>
                         <div class="mb-4" style="height: 22px;">
                             <h4 class="typed-text-output d-inline-block text-light"></h4>
-                            <div class="typed-text d-none">Web Designer, Backend Developer, Front End Developer, Apps Designer, Apps Developer</div>
-                        </div>
-                        <div class="d-flex justify-content-center mt-auto mb-3">
-                            <!-- <a class="btn btn-secondary btn-square mx-1" href="#"><i class="fab fa-twitter"></i></a> -->
-                            <a class="btn btn-secondary btn-square mx-1" href="https://www.facebook.com/gerardo.ramos.125/"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-secondary btn-square mx-1" href="https://www.linkedin.com/in/gerardoramosvargas/"><i class="fab fa-linkedin-in"></i></a>
-                            <a class="btn btn-secondary btn-square mx-1" href="https://www.instagram.com/greenlove_co/"><i class="fab fa-instagram"></i></a>
+                            <div class="typed-text d-none" data-translate-key="text4">Web Designer, Backend Developer, Front End Developer, Apps Designer, Apps Developer</div>
+
                         </div>
                         <div class="d-flex justify-content-center mt-auto mb-3">
                             <a href="https://gerardoramos89.github.io/gerardoramos89/3d/homero/">
@@ -67,9 +73,16 @@
                             </iframe>
                             </a>
                         </div>
+
+                        <div class="d-flex justify-content-center mt-auto mb-3">
+                            <!-- <a class="btn btn-secondary btn-square mx-1" href="#"><i class="fab fa-twitter"></i></a> -->
+                            <a class="btn btn-secondary btn-square mx-1" href="https://www.facebook.com/gerardo.ramos.125/"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-secondary btn-square mx-1" href="https://www.linkedin.com/in/gerardoramosvargas/"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-secondary btn-square mx-1" href="https://www.instagram.com/greenlove_co/"><i class="fab fa-instagram"></i></a>
+                        </div>
                         <div class="d-flex align-items-end justify-content-between border-top">
-                            <a href="Profilegr.pdf" class="btn w-50 border-end">Download CV Spanish</a>
-                            <a href="ProfilegrEnglish.pdf" class="btn w-50 border-end">Download CV English</a>
+                            <!-- <a href="Profilegr.pdf" class="btn w-50 border-end"  data-translate-key="text5">Download CV Spanish</a> -->
+                            <a href="ProfilegrEnglish.pdf" class="btn w-50 border-end" data-translate-key="text5">Download CV</a>
                         </div>
                     </div>
                 </div>
@@ -143,12 +156,12 @@
 
                     <!-- Skills Start -->
                     <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
-                        <h1 class="title pb-3 mb-5">Skills</h1>
+                        <h1 class="title pb-3 mb-5"  data-translate-key="text7">Skills</h1>
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="skill mb-4">
                                     <div class="d-flex justify-content-between">
-                                        <p class="mb-2">.NET</p>
+                                        <p class="mb-2"  data-translate-key="text8">.NET</p>
                                         <p class="mb-2">85%</p>
                                     </div>
                                     <div class="progress">
@@ -157,7 +170,7 @@
                                 </div>
                                 <div class="skill mb-4">
                                     <div class="d-flex justify-content-between">
-                                        <p class="mb-2">HTML</p>
+                                        <p class="mb-2"  data-translate-key="text9">HTML</p>
                                         <p class="mb-2">95%</p>
                                     </div>
                                     <div class="progress">
@@ -166,7 +179,7 @@
                                 </div>
                                 <div class="skill mb-4">
                                     <div class="d-flex justify-content-between">
-                                        <p class="mb-2">CSS</p>
+                                        <p class="mb-2"  data-translate-key="text10">CSS</p>
                                         <p class="mb-2">85%</p>
                                     </div>
                                     <div class="progress">
@@ -175,7 +188,7 @@
                                 </div>
                                 <div class="skill mb-4">
                                     <div class="d-flex justify-content-between">
-                                        <p class="mb-2">PHP</p>
+                                        <p class="mb-2"  data-translate-key="11">PHP</p>
                                         <p class="mb-2">90%</p>
                                     </div>
                                     <div class="progress">
@@ -184,7 +197,7 @@
                                 </div>
                                 <div class="skill mb-4">
                                     <div class="d-flex justify-content-between">
-                                        <p class="mb-2">AWS</p>
+                                        <p class="mb-2"  data-translate-key="text12">AWS</p>
                                         <p class="mb-2">65%</p>
                                     </div>
                                     <div class="progress">
@@ -195,7 +208,7 @@
                             <div class="col-sm-6">
                                 <div class="skill mb-4">
                                     <div class="d-flex justify-content-between">
-                                        <p class="mb-2">Javascript</p>
+                                        <p class="mb-2"  data-translate-key="text13">Javascript</p>
                                         <p class="mb-2">90%</p>
                                     </div>
                                     <div class="progress">
@@ -204,7 +217,7 @@
                                 </div>
                                 <div class="skill mb-4">
                                     <div class="d-flex justify-content-between">
-                                        <p class="mb-2">Angular JS</p>
+                                        <p class="mb-2"  data-translate-key="text14">Angular JS</p>
                                         <p class="mb-2">65%</p>
                                     </div>
                                     <div class="progress">
@@ -213,7 +226,7 @@
                                 </div>
                                 <div class="skill mb-4">
                                     <div class="d-flex justify-content-between">
-                                        <p class="mb-2">React JS</p>
+                                        <p class="mb-2"  data-translate-key="text15">React JS</p>
                                         <p class="mb-2">95%</p>
                                     </div>
                                     <div class="progress">
@@ -222,7 +235,7 @@
                                 </div>
                                 <div class="skill mb-4">
                                     <div class="d-flex justify-content-between">
-                                        <p class="mb-2">Wordpress</p>
+                                        <p class="mb-2"  data-translate-key="text16">Wordpress</p>
                                         <p class="mb-2">85%</p>
                                     </div>
                                     <div class="progress">
@@ -231,7 +244,7 @@
                                 </div>
                                 <div class="skill mb-4">
                                     <div class="d-flex justify-content-between">
-                                        <p class="mb-2">Azure Devops</p>
+                                        <p class="mb-2"  data-translate-key="text17">Azure Devops</p>
                                         <p class="mb-2">85%</p>
                                     </div>
                                     <div class="progress">
@@ -246,21 +259,21 @@
 
                     <!-- Expericence Start -->
                     <section class="py-5 wow fadeInUp" data-wow-delay="0.1s">
-                        <h1 class="title pb-3 mb-5">Expericence</h1>
+                        <h1 class="title pb-3 mb-5"  data-translate-key="text18">Expericence</h1>
                         <div class="border-start border-2 border-light pt-2 ps-5">
                             <div class="position-relative mb-4">
                                 <span class="bi bi-arrow-right fs-4 text-light position-absolute" style="top: -5px; left: -50px;"></span>
-                                <h5 class="mb-1">Web Designer FULL STACK DEVELOPER</h5>
+                                <h5 class="mb-1"  data-translate-key="text19">WEB MASTER</h5>
                                 <p class="mb-2">https://transauktion.com | <small>2023 - 2024</small></p>
-                                <p>I worked as a Full Stack Developer,developing on the various 
+                                <p  data-translate-key="text20">I worked as a Full Stack Developer,developing on the various 
                                     software products of the company,  FrontEnd/Backend native 
                                     Javascript development, BOOSTRAP , PHP, Hostinger, Databe is Mysql.</p>
                             </div>
                             <div class="position-relative mb-4">
                                 <span class="bi bi-arrow-right fs-4 text-light position-absolute" style="top: -5px; left: -50px;"></span>
-                                <h5 class="mb-1">TESTING AND SUPPORT LEADER DEVELOPER</h5>
+                                <h5 class="mb-1"  data-translate-key="text19">TESTING AND SUPPORT LEADER DEVELOPER</h5>
                                 <p class="mb-2">https://www.prestti.com | <small>2021 - 2023</small></p>
-                                <p>I work as a support leader, facing infrastructure and code 
+                                <p  data-translate-key="text21">I work as a support leader, facing infrastructure and code 
                                     incidents in the different company's Software products, 
                                     Managing the deployments to FrontEnd/Backend production 
                                     and the control/updating of the database, using Azure Devops 
@@ -268,18 +281,18 @@
                             </div>
                             <div class="position-relative mb-4">
                                 <span class="bi bi-arrow-right fs-4 text-light position-absolute" style="top: -5px; left: -50px;"></span>
-                                <h5 class="mb-1">FULL STACK DEVELOPER </h5>
+                                <h5 class="mb-1" data-translate-key="text23">FULL STACK DEVELOPER </h5>
                                 <p class="mb-2">MICREDI.COM.CO | <small>2019 - 2021</small></p>
-                                <p>I worked as a Full Stack Developer,developing on the various 
+                                <p  data-translate-key="text22">I worked as a Full Stack Developer,developing on the various 
                                     software products of the company,  FrontEnd/Backend native 
                                     Javascript development for Widget in Wordpress, React.JS, C# 
                                     Entity Frameworks and creating reports or scripts in Mysql.</p>
                             </div>
                             <div class="position-relative mb-4">
                                 <span class="bi bi-arrow-right fs-4 text-light position-absolute" style="top: -5px; left: -50px;"></span>
-                                <h5 class="mb-1">FULL STACK DEVELOPER </h5>
+                                <h5 class="mb-1"  data-translate-key="text23">FULL STACK DEVELOPER </h5>
                                 <p class="mb-2">http://www.hotspotg.com/ | <small>2017 - 2019</small></p>
-                                <p>I worked as a Full Stack Developer in http://www.hotspotg.com/ developing on the various 
+                                <p  data-translate-key="text24">I worked as a Full Stack Developer in http://www.hotspotg.com/ developing on the various 
                                     software products of the company using Android Studio, Html, CSS , PHP, Mysql, Firebase, Google Maps</p>
                             </div>
                         </div>
@@ -288,7 +301,7 @@
 
                     <!-- Subscribe Start -->
                     <section class="wow fadeInUp" data-wow-delay="0.1s">
-                        <h1 class="title pb-3 mb-5">Studies and Certificates</h1>
+                        <h1 class="title pb-3 mb-5"  data-translate-key="text25">Studies and Certificates</h1>
                         <div class="bg-secondary text-center p-5">
                             <img class="w-60 img-fluid mb-4" src="img/aws.png" alt="Image">
                         </div>
@@ -297,34 +310,34 @@
 
                     <!-- Services Start -->
                     <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
-                        <h1 class="title pb-3 mb-5">Services</h1>
+                        <h1 class="title pb-3 mb-5"  data-translate-key="text26">Services</h1>
                         <div class="row g-4">
                             <div class="col-md-6">
                                 <div class="service-item">
                                     <i class="fa fa-2x fa-laptop-code mx-auto mb-4"></i>
                                     <h5 class="mb-2">Web Design</h5>
-                                    <!-- <p class="mb-0">Justo sit justo eos amet tempor amet clita amet ipsum eos elitr. Amet lorem lorem lorem est amet labore</p> -->
+                                    <p class="mb-0" data-translate-key="text27">Web design is an area focused on the development of digital interfaces, such as the design of web sites and applications. To do this, web designers create pages using markup languages ​​such as HTML.</p>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="service-item">
                                     <i class="fab fa-2x fa-android mx-auto mb-4"></i>
-                                    <h5 class="mb-2">Apps Development</h5>
-                                    <!-- <p class="mb-0">Justo sit justo eos amet tempor amet clita amet ipsum eos elitr. Amet lorem lorem lorem est amet labore</p> -->
+                                    <h5 class="mb-2"  data-translate-key="text28">Apps Development</h5>
+                                    <p class="mb-0" data-translate-key="text29">Mobile application programming is the digital development of software adapted to mobile devices that use a compatible operating system for download as an application.</p>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="service-item">
                                     <i class="fa fa-2x fa-search mx-auto mb-4"></i>
-                                    <h5 class="mb-2">SEO</h5>
-                                    <!-- <p class="mb-0">Justo sit justo eos amet tempor amet clita amet ipsum eos elitr. Amet lorem lorem lorem est amet labore</p> -->
+                                    <h5 class="mb-2"  data-translate-key="text30">SEO</h5>
+                                    <p class="mb-0"   data-translate-key="text31">Basically, SEO is about meeting the search needs of users, creating quality, relevant content and providing the best possible user experience.</p>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="service-item">
                                     <i class="fa fa-2x fa-edit mx-auto mb-4"></i>
-                                    <h5 class="mb-2">Content Creating</h5>
-                                    <!-- <p class="mb-0">Justo sit justo eos amet tempor amet clita amet ipsum eos elitr. Amet lorem lorem lorem est amet labore</p> -->
+                                    <h5 class="mb-2"  data-translate-key="text32"></h5>Content Creating</h5>
+                                    <p class="mb-0"   data-translate-key="text33">Design and development of web applications more Content Creating.</p>
                                 </div>
                             </div>
                         </div>
@@ -333,15 +346,15 @@
 
                     <!-- Portfolio Start -->
                     <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
-                        <h1 class="title pb-3 mb-5">Portfolio</h1>
+                        <h1 class="title pb-3 mb-5" data-translate-key="text34"></h1>>Portfolio</h1>
                         <div class="row">
                             <div class="col-12">
                                 <div class="row">
                                     <div class="col-12 text-center mb-2">
                                         <ul class="list-inline mb-4" id="portfolio-flters">
-                                            <li class="btn btn-secondary active"  data-filter="*"><i class="fa fa-star me-2"></i>All</li>
-                                            <li class="btn btn-secondary" data-filter=".first"><i class="fa fa-laptop-code me-2"></i>Design</li>
-                                            <li class="btn btn-secondary" data-filter=".second"><i class="fa fa-mobile-alt me-2"></i>Development</li>
+                                            <li class="btn btn-secondary active"  data-filter="*"><i class="fa fa-star me-2"></i><p data-translate-key="text35">All</p></li>
+                                            <li class="btn btn-secondary" data-filter=".first"><i class="fa fa-laptop-code me-2"></i><p data-translate-key="text36"></p>Design</p></li>
+                                            <li class="btn btn-secondary" data-filter=".second"><i class="fa fa-mobile-alt me-2"></i><p data-translate-key="text37"></p>Development</p></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -394,27 +407,27 @@
 
                     <!-- Testimonial Start -->
                     <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
-                        <h1 class="title pb-3 mb-5">Testimonial</h1>
+                        <h1 class="title pb-3 mb-5" data-translate-key="text38">Testimonial</h1>
                         <div class="owl-carousel testimonial-carousel">
                             <div class="text-left">
                                 <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                                <p class="fs-4 mb-4">I had the pleasure to work with Gerardo in an mobile App in 2016. He developed the back-end infrastructure using MySQL and PHP. The mobile Application targeted the Android public, and the focus of the application was to provide hotSpot connection through cell phone devices to those who need it. It was a very innovative idea, and we had the joy to subscribe over 1000 clients into the database. Gerardo was very committed to administer the DB and to maintain it functional despite of unexpected events that once occurred. I was very motivated to work with Gerardo because of his vast experience developing code. Something remarkable about him, was the speed in which he was able to pick up new technology and new coding languages. Gerardo is a soft spoken individual and I admire his work ethic. I strongly recommend Gerardo for anything thinking on launching his next mobile App.</p>
+                                <p class="fs-4 mb-4" data-translate-key="text39">I had the pleasure to work with Gerardo in an mobile App in 2016. He developed the back-end infrastructure using MySQL and PHP. The mobile Application targeted the Android public, and the focus of the application was to provide hotSpot connection through cell phone devices to those who need it. It was a very innovative idea, and we had the joy to subscribe over 1000 clients into the database. Gerardo was very committed to administer the DB and to maintain it functional despite of unexpected events that once occurred. I was very motivated to work with Gerardo because of his vast experience developing code. Something remarkable about him, was the speed in which he was able to pick up new technology and new coding languages. Gerardo is a soft spoken individual and I admire his work ethic. I strongly recommend Gerardo for anything thinking on launching his next mobile App.</p>
                                 <div class="d-flex align-items-center">
                                     <!-- <img class="img-fluid" src="https://www.linkedin.com/in/jaigarmanj/overlay/photo/" style="width: 60px; height: 60px;"> -->
                                     <div class="ps-3">
                                         <a href="img/portfolio-4.jpg" data-lightbox="portfolio"></a><p class="text-primary fs-5 mb-1">Jaime Garcia</p> </a>
-                                        <i>Strategy & Analytics Consultant</i>
+                                        <i data-translate-key="text40">Strategy & Analytics Consultant</i>
                                     </div>
                                 </div>
                             </div>
                             <div class="text-left">
                                 <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                                <p class="fs-4 mb-4">Gerardo is a professional in the programming area. For Gerardo</p>
+                                <p class="fs-4 mb-4" data-translate-key="text41">Gerardo is a professional in the programming area. For Gerardo</p>
                                 <div class="d-flex align-items-center">
                                     <!-- <img class="img-fluid" src="https://www.linkedin.com/in/ismael-e-castiblanco-163b81110/overlay/photo/" style="width: 60px; height: 60px;"> -->
                                     <div class="ps-3">
                                         <p class="text-primary fs-5 mb-1">Ismael E Castiblanco</p>
-                                        <i>Sales and Marketing Manager @ GoPrestamos / Loan Originator at Buckhead Home Loans NMLS # 1616970</i>
+                                        <i data-translate-key="text42">Sales and Marketing Manager @ GoPrestamos / Loan Originator at Buckhead Home Loans NMLS # 1616970</i>
                                     </div>
                                 </div>
                             </div>
@@ -477,7 +490,7 @@
                             </div> -->
 							
                             <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-							<p class="m-0">&copy; All Rights Reserved.<a href="https://www.linkedin.com/in/gerardoramosvargas/">HTML Code Gerardo Ramos</a></p>
+							<p class="m-0" data-translate-key="text43">&copy; All Rights Reserved.<a href="https://www.linkedin.com/in/gerardoramosvargas/" data-translate-key="text44">HTML Code Gerardo Ramos</a></p>
                         </div>
                     </section>
                     <!-- Footer End -->
@@ -502,10 +515,31 @@
         <script src="lib/lightbox/js/lightbox.min.js"></script>
 
         <!-- Contact Javascript File -->
-        <script src="mail/jqBootstrapValidation.min.js"></script>
-        <script src="mail/contact.js"></script>
+        <!-- <script src="mail/jqBootstrapValidation.min.js"></script>
+        <script src="mail/contact.js"></script> -->
 
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
+
+        <script type="text/javascript" src="js/translation.js"></script>
+
+        <script type="text/javascript">
+                function translatefun() {
+                    const selectedLanguage = document.getElementById('language').value;
+            
+            
+            
+                    const elementsToTranslate = document.querySelectorAll('[data-translate-key]');
+                    localStorage.setItem('lang', selectedLanguage);
+            
+                    elementsToTranslate.forEach(element => {
+                    const translationKey = element.getAttribute('data-translate-key');
+                    const translation = translations[selectedLanguage][translationKey];
+                    if (translation) {
+                        element.innerHTML = translation;
+                    }
+                    });
+                }
+        </script>
     </body>
 </html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat con Cámara</title>
+</head>
+<body>
+    <h1>Chat con Cámara</h1>
+    <div id="videoContainer">
+        <video id="localVideo" autoplay></video>
+        <video id="remoteVideo" autoplay></video>
+    </div>
+    <div id="userInfo">
+        <p>Tu ID único es: <span id="userId"></span></p>
+    </div>
+    <select id="languageSelect">
+        <option value="en">Inglés</option>
+        <option value="es">Español</option>
+        <!-- Agrega más opciones de idioma según sea necesario -->
+    </select>
+    <input type="text" id="remoteUserId" placeholder="Ingresa el ID del usuario">
+    <button onclick="startChat()">Empezar Chat</button>
+
+    <script src="https://unpkg.com/peerjs@1.5.2/dist/peerjs.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

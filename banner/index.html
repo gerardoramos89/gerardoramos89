@@ -27,7 +27,7 @@ body {
 		align-items: center;
 		justify-content: center;
 		height: 100vh;
-		background: radial-gradient(#202020, #000000);
+		background-image: url("img.jpg");
 		overflow: hidden;
 }
 
@@ -271,15 +271,15 @@ function restart() {
 
 function initTextCanvas() {
 
-    context.fillStyle = 'white';
+    context.fillStyle = 'red';
     context.fillRect( 0, 0, w, h );
     context.fillStyle = 'black';
 
 }
 
-function drawTextToCanvas( { text, x, y, fontWeight, fontSize, color = 'black', align = 'center', baseline = 'middle' } ) {
+function drawTextToCanvas( { text, x, y, fontWeight, fontSize, color = 'red', align = 'center', baseline = 'middle' } ) {
 
-    context.font = `${fontWeight} ${fontSize}px 'Open Sans', sans-serif`;
+    context.font = `${fontWeight} ${fontSize}px 'italic', italic`;
     context.textAlign = align;
     context.textBaseline = baseline;
     context.fillText( text, x, y );
@@ -312,7 +312,7 @@ function addDots() {
 
         if ( isPixelBlack( x, y ) === true ) {
 
-            dot = addDot( x, y, dotsRadius, dotsDiameter, 255, Math.floor( Math.random() * 255), 0, 0 );
+            dot = addDot( x, y, dotsRadius, dotsDiameter, 255, Math.floor( Math.random() * 255), 50, 150 );
             
         } else {
 

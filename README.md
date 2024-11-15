@@ -5,8 +5,8 @@ I’m a **Systems Engineer** (graduated in 2016) with over **5 years of experien
 
 ### 💻 Skills & Expertise  
 - **Backend Development:** Java, .NET Core, PHP  
-- **Frontend Development:** React.js, Angular, Flutter  
-- **DevOps:** AWS, Azure DevOps, CI/CD pipelines  
+- **Frontend Development:** React.js, Next, Android Studio  
+- **DevOps:** AWS, Azure DevOps, CI/CD pipelines  , Google Cloud
 - **Databases:** Management, pipelines, and dashboard monitoring  
 
 ### 🚀 What Drives Me  

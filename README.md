@@ -1,14 +1,18 @@
 👋 Hi, I’m @gerardoramos89
+
 👀 Passionate About:
+
 
 Software Developer
 Full Stack Development (React.js, NetCore)
 Cloud Technologies (AWS, Azure DevOps)
 🌱 Currently Exploring: Prestti SAS
 
+
 Data Science
 Artificial Intelligence
 💞️ Open to Collaborate On: Micredi SAS
+
 
 📫 How to Reach Me:
 Visit My Portfolio

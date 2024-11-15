@@ -4,6 +4,8 @@
 - 💞️ I’m looking to collaborate on Software Testing 
 - 📫 How to reach me ...
 
+- https://nextgerard-53e74.web.app/
+
 Hi, I'm Gerardo Ramos, Engineer at systems graduated in 
 the year 2016. I am a lover of agile and efficient technology, 
 Experience in more than 5 years in development Backend Java, Net Core, PHP, 
@@ -14,7 +16,8 @@ of the software. excited to learn more about data science
 and artificial intelligence. Always excited to learn anything 
 thing related to the development of software.
 
-
 ![image](https://user-images.githubusercontent.com/57040617/224823782-a6f1ea95-3f08-46ba-8c27-5fe750efe3ca.png)
+
+![projectcustomweb](https://github.com/user-attachments/assets/998426e0-f005-4dc2-ab37-a26a51430eb7)
 
 ![1678416162893](https://user-images.githubusercontent.com/57040617/224823183-93aa6397-abaa-4f0c-8bb4-5fdd4bd22462.gif)

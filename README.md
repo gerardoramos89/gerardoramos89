@@ -1,7 +1,7 @@
 # 👋 Hi, I’m Gerardo Ramos (@gerardoramos89)  
 
 ## 👀 About Me  
-I’m a **Systems Engineer** (graduated in 2016) with over **5 years of experience** in software development. My passion lies in creating agile and efficient technology solutions that drive impact.  
+I’m a **Systems Engineer** (graduated in 2016) with over **8 years of experience** in software development. My passion lies in creating agile and efficient technology solutions that drive impact.  
 
 ### 💻 Skills & Expertise  
 - **Backend Development:** Java, .NET Core, PHP  

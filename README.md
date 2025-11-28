@@ -18,7 +18,31 @@ $25.000 COP (solo disponible por transferencia bancaria)
 
 ![Imagen de WhatsApp 2025-11-28 a las 00 37 05_ce9eecbf](https://github.com/user-attachments/assets/a1cdf5b3-2476-4f0c-9c23-3664cc6ee85d)
 
+te ayudo a adquirir el Kit OVNI – Asesoría de SOFTWARE.
 
+Antes de proceder, solo para confirmar y asegurarnos de que todo esté claro:
+
+🛸 Tu Kit Incluye
+✅ 5 calcomanías temáticas (OVNIs, alienígenas, símbolos espaciales)
+✅ 1 pin metálico exclusivo
+✅ 1 pin de plástico (colección “Objeto Acertijo”)
+✅ 1 vela aromática con esencia única: ozono + frutos rojos + galaxia 🌌
+✅ 1 patineta de dedos (fidget spinner) con diseño temático OVNI 🌀
+✅ + Asesoría de SOFTWARE (¡muy útil si estás explorando desarrollo, IA o automatización!)
+💰 Precio: $25.000 COP
+📦 Varios diseños disponibles – ¡puedes pedir más de un kit si quieres!
+
+✅ Próximos pasos para reservar tu kit:
+Confírmanos:
+¿Cuántos kits deseas?
+¿Tienes preferencia de diseño en pins o calcomanías? (si aplica)
+Ciudad de envío (para calcular detalles logísticos)
+Realiza tu pago por:
+Nequi: [aquí iría el número]
+Daviplata: [aquí iría el número]
+Transferencia bancaria: [aquí irían los datos]
+Una vez realices el pago, envía el comprobante (captura o referencia) y listo:
+📦 ¡Armamos tu kit y lo despachamos a cualquier ciudad de Colombia!
 
 
 ## 👀 About Me  

@@ -1,7 +1,7 @@
-# 👋 HOLA SOY GERArDO RAMOS, me pueden ayudar adquierinedo este kit:
+# 👋 HOLA SOY GERARDO RAMOS, me pueden ayudar con un liKE y si pueden adquierinedo este kit:
 
 🛸 Kit OVNI – Asesoria de SOFTWARE
-$25.000 COP (solo disponible por transferencia bancaria)
+$25.000 COP + $5000 Envio BOGOTA (solo disponible por transferencia bancaria)
 
 ✨ Incluye:
 

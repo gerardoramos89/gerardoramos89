@@ -1,4 +1,24 @@
-# 👋 Hi, I’m Gerardo Ramos (@gerardoramos89)  
+# 👋 HOLA SOY GERArDO RAMOS, me pueden ayudar adquierinedo este kit:
+
+🛸 Kit OVNI – Asesoria de SOFTWARE
+$25.000 COP (solo disponible por transferencia bancaria)
+
+✨ Incluye:
+
+5 calcomanías temáticas de OVNIs, alienígenas y símbolos espaciales
+1 pin metálico exclusivo
+1 pin de plástico colección "Contacto Cósmico"
+1 vela aromática con esencia misteriosa (notas de ozono, sándalo y galaxia 🌌)
+1 patineta de dedos (fidget spinner) -  🌀
+📦 Edición limitada – ideal para coleccionistas, amantes del misterio y fans del universo paranormal.
+🧘‍♂️ ¡Perfecto para relajarte mientras contactas con lo desconocido tenemos variso diseños si quieres mas de un KIT!
+
+💳 Forma de pago: Transferencia bancaria (Nequi, Daviplata o cuenta tradicional).
+📬 Envíos a todo Colombia – ¡Resérvalo antes de que desaparezca en el espacio!
+
+
+
+
 
 ## 👀 About Me  
 I’m a **Systems Engineer** (graduated in 2016) with over **8 years of experience** in software development. My passion lies in creating agile and efficient technology solutions that drive impact.  

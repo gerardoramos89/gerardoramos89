@@ -7,8 +7,8 @@ $25.000 COP (solo disponible por transferencia bancaria)
 
 5 calcomanías temáticas de OVNIs, alienígenas y símbolos espaciales
 1 pin metálico exclusivo
-1 pin de plástico colección "Contacto Cósmico"
-1 vela aromática con esencia misteriosa (notas de ozono, sándalo y galaxia 🌌)
+1 pin de plástico colección y/o "Objeto Acertijo"
+1 vela aromática con esencia misteriosa (notas de ozono, frutos rojos y galaxia 🌌)
 1 patineta de dedos (fidget spinner) -  🌀
 📦 Edición limitada – ideal para coleccionistas, amantes del misterio y fans del universo paranormal.
 🧘‍♂️ ¡Perfecto para relajarte mientras contactas con lo desconocido tenemos variso diseños si quieres mas de un KIT!
@@ -16,6 +16,7 @@ $25.000 COP (solo disponible por transferencia bancaria)
 💳 Forma de pago: Transferencia bancaria (Nequi, Daviplata o cuenta tradicional).
 📬 Envíos a todo Colombia – ¡Resérvalo antes de que desaparezca en el espacio!
 
+![Imagen de WhatsApp 2025-11-28 a las 00 37 05_ce9eecbf](https://github.com/user-attachments/assets/a1cdf5b3-2476-4f0c-9c23-3664cc6ee85d)
 
 
 

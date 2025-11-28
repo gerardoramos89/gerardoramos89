@@ -1,545 +1,171 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-        <title data-translate-key="text0">Gerardo Ramos</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="Free Website Template" name="keywords">
-        <meta content="Free Website Template" name="description">
-        <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kit OVNI + Asesoría de Software | Gerardo Ramos</title>
+  <meta name="description" content="Kit OVNI edición limitada con asesoría en software por $25.000 COP. Incluye calcomanías, pins, vela, fidget spinner y sesión técnica. Envíos a todo Colombia.">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
 
-        <!-- Favicon -->
-        <link href="img/favicon.ico" rel="icon">
+    body {
+      background: linear-gradient(135deg, #0c0e2b, #1a1c3f);
+      color: #e0e0ff;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
 
-        <!-- Google Web Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
 
-        <!-- Icon Font Stylesheet -->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    header {
+      text-align: center;
+      padding: 2rem 0;
+    }
 
-        <!-- Libraries Stylesheet -->
-        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-        <link href="lib/animate/animate.min.css" rel="stylesheet">
+    h1 {
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+      background: linear-gradient(to right, #00f0ff, #cc00ff);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      text-shadow: 0 0 10px rgba(0, 240, 255, 0.3);
+    }
 
-        <!-- Customized Bootstrap Stylesheet -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
+    .subtitle {
+      font-size: 1.4rem;
+      margin-bottom: 2rem;
+      color: #a0a0ff;
+    }
 
-        <!-- Template Stylesheet -->
-        <link href="css/style.css" rel="stylesheet">
-    </head>
+    .price {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #00f0ff;
+      margin: 1.5rem 0;
+    }
 
-    <body>
-        <!-- Spinner Start -->
-        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-                <span class="sr-only" data-translate-key="text1">Loading...</span>
-            </div>
-        </div>
-        <!-- Spinner End -->
+    .kit-items {
+      background: rgba(20, 22, 50, 0.6);
+      border: 1px solid #3a3d80;
+      border-radius: 16px;
+      padding: 1.5rem;
+      margin: 2rem 0;
+    }
 
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-4 sticky-lg-top vh-100">
-                    <div class="d-flex flex-column h-100 text-center overflow-auto shadow">
-                        <img class="w-100 img-fluid mb-4" src="img/profile.jpg" alt="Image">
-                        <h1 class="text-primary mt-2">Gerardo Ramos V</h1>
-                        <h2 lang="es" data-translate-key="text2">¡Sitio en Proceso de Construcción!</h2>
-                        <label for="language" data-translate-key="text3">Selecciona un idioma:</label>
-                        <select id="language" name="language" onchange="translatefun()">
-                          <option value="es" class="flag-es" data-translate-key="textEspanol" selected>Español</option>
-                          <option value="en" class="flag-en" data-translate-key="textIngles" >Inglés</option>
-                          <!-- <option value="de" class="flag-de" data-translate-key="textAleman">Alemán</option>
-                          <option value="fr" class="flag-fr" data-translate-key="textFrances">Francés</option>
-                          <option value="pt" class="flag-pt" data-translate-key="textPortugues">Portugués</option>     
-                          <option value="pt" class="flag-pt" data-translate-key="textChino">现代标准汉语</option>      -->
-                          <!-- Agrega más opciones según tus necesidades -->
-                        </select>
-                        <div class="mb-4" style="height: 22px;">
-                            <h4 class="typed-text-output d-inline-block text-light"></h4>
-                            <div class="typed-text d-none" data-translate-key="text4">Web Designer, Backend Developer, Front End Developer, Apps Designer, Apps Developer</div>
+    .kit-items h2 {
+      color: #00f0ff;
+      margin-bottom: 1rem;
+    }
 
-                        </div>
-                        <div class="d-flex justify-content-center mt-auto mb-3">
-                            <a href="https://gerardoramos89.github.io/gerardoramos89/3d/homero/">
-                            <iframe
-                            id="3d"
-                            title="3d"
-                            width="300"
-                            height="200"
-                            src="https://gerardoramos89.github.io/gerardoramos89/3d/homero/">
-                            </iframe>
-                            </a>
-                        </div>
+    .kit-items ul {
+      padding-left: 1.2rem;
+    }
 
-                        <div class="d-flex justify-content-center mt-auto mb-3">
-                            <!-- <a class="btn btn-secondary btn-square mx-1" href="#"><i class="fab fa-twitter"></i></a> -->
-                            <a class="btn btn-secondary btn-square mx-1" href="https://www.facebook.com/gerardo.ramos.125/"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-secondary btn-square mx-1" href="https://www.linkedin.com/in/gerardoramosvargas/"><i class="fab fa-linkedin-in"></i></a>
-                            <a class="btn btn-secondary btn-square mx-1" href="https://www.instagram.com/greenlove_co/"><i class="fab fa-instagram"></i></a>
-                        </div>
-                        <div class="d-flex align-items-end justify-content-between border-top">
-                            <!-- <a href="Profilegr.pdf" class="btn w-50 border-end"  data-translate-key="text5">Download CV Spanish</a> -->
-                            <a href="ProfilegrEnglish.pdf" class="btn w-50 border-end" data-translate-key="text5">Download CV</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-8">
-                    <!-- About Start -->
-                    <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
-                        <h1 class="title pb-3 mb-5">About Me</h1>
-                        <p>Hi, I'm Gerardo Ramos, Engineer at systems graduated in 
-                            the year 2016. I am a lover of agile and efficient technology, 
-                            Experience in more than 5 years in development Backend, 
-                            Frontend and DevOps using lenguajes PHP, .NET, JAVASCRIPT.  worked with AWS tools and Azure Devops for version control using Git and Deploy control pipelines in AWS and dashboards for monitoring 
-                            of the software, also managing  
-                            databases data , using MySQL, MongoBD, Firebase.</p>
-                        <div class="row mb-4">
-                            <div class="col-sm-6 py-1">
-                                <span class="fw-medium text-primary">Name:</span> Gerardo Ramos
-                            </div>
-                            <div class="col-sm-6 py-1">
-                                <span class="fw-medium text-primary">Birthday:</span> 11 October 1989
-                            </div>
-                            <div class="col-sm-6 py-1">
-                                <span class="fw-medium text-primary">Degree:</span> Systems Engineer
-                            </div>
-                            <div class="col-sm-6 py-1">
-                                <span class="fw-medium text-primary">Experience:</span> 8 Years
-                            </div>
-                            <div class="col-sm-6 py-1">
-                                <span class="fw-medium text-primary">Phone:</span> +57 3183863469 
-                            </div>
-                            <div class="col-sm-6 py-1">
-                                <span class="fw-medium text-primary">Email:</span> coordtss2@gmail.com
-                            </div>
-                            <div class="col-sm-6 py-1">
-                                <span class="fw-medium text-primary">Address:</span> Gaira, SANTA mARTA, CO
-                            </div>
-                            <div class="col-sm-6 py-1">
-                                <span class="fw-medium text-primary">Freelance:</span> Available
-                            </div>
-                        </div>
-                        <div class="row g-4">
-                            <div class="col-md-4 col-lg-6 col-xl-4">
-                                <div class="d-flex bg-secondary p-4">
-                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">8</h1>
-                                    <div class="ps-3">
-                                        <p class="mb-0">Years of</p>
-                                        <h5 class="mb-0">Experience</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-lg-6 col-xl-4">
-                                <div class="d-flex bg-secondary p-4">
-                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">12</h1>
-                                    <div class="ps-3">
-                                        <p class="mb-0">Happy</p>
-                                        <h5 class="mb-0">Clients</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-lg-6 col-xl-4">
-                                <div class="d-flex bg-secondary p-4">
-                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">15</h1>
-                                    <div class="ps-3">
-                                        <p class="mb-0">Complete</p>
-                                        <h5 class="mb-0">Projects</h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <!-- About End -->
+    .kit-items li {
+      margin-bottom: 0.6rem;
+    }
 
-                    <!-- Skills Start -->
-                    <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
-                        <h1 class="title pb-3 mb-5"  data-translate-key="text7">Skills</h1>
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <div class="skill mb-4">
-                                    <div class="d-flex justify-content-between">
-                                        <p class="mb-2"  data-translate-key="text8">.NET</p>
-                                        <p class="mb-2">85%</p>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-info" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                                <div class="skill mb-4">
-                                    <div class="d-flex justify-content-between">
-                                        <p class="mb-2"  data-translate-key="text9">HTML</p>
-                                        <p class="mb-2">95%</p>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                                <div class="skill mb-4">
-                                    <div class="d-flex justify-content-between">
-                                        <p class="mb-2"  data-translate-key="text10">CSS</p>
-                                        <p class="mb-2">85%</p>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                                <div class="skill mb-4">
-                                    <div class="d-flex justify-content-between">
-                                        <p class="mb-2"  data-translate-key="11">PHP</p>
-                                        <p class="mb-2">90%</p>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                                <div class="skill mb-4">
-                                    <div class="d-flex justify-content-between">
-                                        <p class="mb-2"  data-translate-key="text12">AWS</p>
-                                        <p class="mb-2">65%</p>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-info" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="skill mb-4">
-                                    <div class="d-flex justify-content-between">
-                                        <p class="mb-2"  data-translate-key="text13">Javascript</p>
-                                        <p class="mb-2">90%</p>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                                <div class="skill mb-4">
-                                    <div class="d-flex justify-content-between">
-                                        <p class="mb-2"  data-translate-key="text14">Angular JS</p>
-                                        <p class="mb-2">65%</p>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-success" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                                <div class="skill mb-4">
-                                    <div class="d-flex justify-content-between">
-                                        <p class="mb-2"  data-translate-key="text15">React JS</p>
-                                        <p class="mb-2">95%</p>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-success" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                                <div class="skill mb-4">
-                                    <div class="d-flex justify-content-between">
-                                        <p class="mb-2"  data-translate-key="text16">Wordpress</p>
-                                        <p class="mb-2">85%</p>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-info" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                                <div class="skill mb-4">
-                                    <div class="d-flex justify-content-between">
-                                        <p class="mb-2"  data-translate-key="text17">Azure Devops</p>
-                                        <p class="mb-2">85%</p>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-info" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
+    .highlight {
+      color: #ff6ec7;
+    }
 
-                            </div>
-                        </div>
-                    </section>
-                    <!-- Skills End -->
+    .cta-button {
+      display: block;
+      width: fit-content;
+      margin: 2.5rem auto;
+      padding: 14px 32px;
+      background: linear-gradient(to right, #00f0ff, #6a00ff);
+      color: black !important;
+      font-weight: bold;
+      font-size: 1.2rem;
+      text-decoration: none;
+      border-radius: 50px;
+      box-shadow: 0 0 20px rgba(0, 240, 255, 0.5);
+      transition: all 0.3s ease;
+    }
 
-                    <!-- Expericence Start -->
-                    <section class="py-5 wow fadeInUp" data-wow-delay="0.1s">
-                        <h1 class="title pb-3 mb-5"  data-translate-key="text18">Expericence</h1>
-                        <div class="border-start border-2 border-light pt-2 ps-5">
-                            <div class="position-relative mb-4">
-                                <span class="bi bi-arrow-right fs-4 text-light position-absolute" style="top: -5px; left: -50px;"></span>
-                                <h5 class="mb-1"  data-translate-key="text19">WEB MASTER</h5>
-                                <p class="mb-2">https://transauktion.com | <small>2023 - 2024</small></p>
-                                <p  data-translate-key="text20">I worked as a Full Stack Developer,developing on the various 
-                                    software products of the company,  FrontEnd/Backend native 
-                                    Javascript development, BOOSTRAP , PHP, Hostinger, Databe is Mysql.</p>
-                            </div>
-                            <div class="position-relative mb-4">
-                                <span class="bi bi-arrow-right fs-4 text-light position-absolute" style="top: -5px; left: -50px;"></span>
-                                <h5 class="mb-1"  data-translate-key="text19">TESTING AND SUPPORT LEADER DEVELOPER</h5>
-                                <p class="mb-2">https://www.prestti.com | <small>2021 - 2023</small></p>
-                                <p  data-translate-key="text21">I work as a support leader, facing infrastructure and code 
-                                    incidents in the different company's Software products, 
-                                    Managing the deployments to FrontEnd/Backend production 
-                                    and the control/updating of the database, using Azure Devops 
-                                    tools, Visual Studio, AWS, React, .Net Core</p>
-                            </div>
-                            <div class="position-relative mb-4">
-                                <span class="bi bi-arrow-right fs-4 text-light position-absolute" style="top: -5px; left: -50px;"></span>
-                                <h5 class="mb-1" data-translate-key="text23">FULL STACK DEVELOPER </h5>
-                                <p class="mb-2">MICREDI.COM.CO | <small>2019 - 2021</small></p>
-                                <p  data-translate-key="text22">I worked as a Full Stack Developer,developing on the various 
-                                    software products of the company,  FrontEnd/Backend native 
-                                    Javascript development for Widget in Wordpress, React.JS, C# 
-                                    Entity Frameworks and creating reports or scripts in Mysql.</p>
-                            </div>
-                            <div class="position-relative mb-4">
-                                <span class="bi bi-arrow-right fs-4 text-light position-absolute" style="top: -5px; left: -50px;"></span>
-                                <h5 class="mb-1"  data-translate-key="text23">FULL STACK DEVELOPER </h5>
-                                <p class="mb-2">http://www.hotspotg.com/ | <small>2017 - 2019</small></p>
-                                <p  data-translate-key="text24">I worked as a Full Stack Developer in http://www.hotspotg.com/ developing on the various 
-                                    software products of the company using Android Studio, Html, CSS , PHP, Mysql, Firebase, Google Maps</p>
-                            </div>
-                        </div>
-                    </section>
-                    <!-- Expericence End -->
+    .cta-button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 30px rgba(0, 240, 255, 0.8);
+    }
 
-                    <!-- Subscribe Start -->
-                    <section class="wow fadeInUp" data-wow-delay="0.1s">
-                        <h1 class="title pb-3 mb-5"  data-translate-key="text25">Studies and Certificates</h1>
-                        <div class="bg-secondary text-center p-5">
-                            <img class="w-60 img-fluid mb-4" src="img/aws.png" alt="Image">
-                        </div>
-                    </section>
-                    <!-- Subscribe End -->
+    .note {
+      text-align: center;
+      margin-top: 2rem;
+      color: #8888cc;
+      font-style: italic;
+      font-size: 0.95rem;
+    }
 
-                    <!-- Services Start -->
-                    <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
-                        <h1 class="title pb-3 mb-5"  data-translate-key="text26">Services</h1>
-                        <div class="row g-4">
-                            <div class="col-md-6">
-                                <div class="service-item">
-                                    <i class="fa fa-2x fa-laptop-code mx-auto mb-4"></i>
-                                    <h5 class="mb-2">Web Design</h5>
-                                    <p class="mb-0" data-translate-key="text27">Web design is an area focused on the development of digital interfaces, such as the design of web sites and applications. To do this, web designers create pages using markup languages ​​such as HTML.</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="service-item">
-                                    <i class="fab fa-2x fa-android mx-auto mb-4"></i>
-                                    <h5 class="mb-2"  data-translate-key="text28">Apps Development</h5>
-                                    <p class="mb-0" data-translate-key="text29">Mobile application programming is the digital development of software adapted to mobile devices that use a compatible operating system for download as an application.</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="service-item">
-                                    <i class="fa fa-2x fa-search mx-auto mb-4"></i>
-                                    <h5 class="mb-2"  data-translate-key="text30">SEO</h5>
-                                    <p class="mb-0"   data-translate-key="text31">Basically, SEO is about meeting the search needs of users, creating quality, relevant content and providing the best possible user experience.</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="service-item">
-                                    <i class="fa fa-2x fa-edit mx-auto mb-4"></i>
-                                    <h5 class="mb-2"  data-translate-key="text32"></h5>Content Creating</h5>
-                                    <p class="mb-0"   data-translate-key="text33">Design and development of web applications more Content Creating.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <!-- Services End -->
+    footer {
+      text-align: center;
+      padding: 2rem 0 1rem;
+      color: #6666aa;
+      font-size: 0.9rem;
+    }
 
-                    <!-- Portfolio Start -->
-                    <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
-                        <h1 class="title pb-3 mb-5" data-translate-key="text34"></h1>>Portfolio</h1>
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="row">
-                                    <div class="col-12 text-center mb-2">
-                                        <ul class="list-inline mb-4" id="portfolio-flters">
-                                            <li class="btn btn-secondary active"  data-filter="*"><i class="fa fa-star me-2"></i><p data-translate-key="text35">All</p></li>
-                                            <li class="btn btn-secondary" data-filter=".first"><i class="fa fa-laptop-code me-2"></i><p data-translate-key="text36"></p>Design</p></li>
-                                            <li class="btn btn-secondary" data-filter=".second"><i class="fa fa-mobile-alt me-2"></i><p data-translate-key="text37"></p>Development</p></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="row portfolio-container">
-                                    <div class="col-md-6 mb-4 portfolio-item first">
-                                        <div class="position-relative overflow-hidden mb-2">
-                                            <img class="img-fluid w-100" src="img/portfolio-1.jpg" alt="">
-                                            <div class="portfolio-btn d-flex align-items-center justify-content-center">
-                                                <a href="img/portfolio-1.jpg" data-lightbox="portfolio">
-                                                    <i class="bi bi-plus text-light"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 mb-4 portfolio-item second">
-                                        <div class="position-relative overflow-hidden mb-2">
-                                            <img class="img-fluid w-100" src="img/portfolio-2.jpg" alt="">
-                                            <div class="portfolio-btn d-flex align-items-center justify-content-center">
-                                                <a href="img/portfolio-2.jpg" data-lightbox="portfolio">
-                                                    <i class="bi bi-plus text-light"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 mb-4 portfolio-item first">
-                                        <div class="position-relative overflow-hidden mb-2">
-                                            <img class="img-fluid w-100" src="img/portfolio-3.jpg" alt="">
-                                            <div class="portfolio-btn d-flex align-items-center justify-content-center">
-                                                <a href="img/portfolio-3.jpg" data-lightbox="portfolio">
-                                                    <i class="bi bi-plus text-light"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 mb-4 portfolio-item second">
-                                        <div class="position-relative overflow-hidden mb-2">
-                                            <img class="img-fluid w-100" src="img/portfolio-4.jpg" alt="">
-                                            <div class="portfolio-btn d-flex align-items-center justify-content-center">
-                                                <a href="img/portfolio-4.jpg" data-lightbox="portfolio">
-                                                    <i class="bi bi-plus text-light"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <!-- Portfolio End -->
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2.1rem;
+      }
+      .subtitle {
+        font-size: 1.1rem;
+      }
+      .price {
+        font-size: 1.6rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🛸 Kit OVNI + Asesoría de SOFTWARE</h1>
+      <div class="subtitle">¿Sientes que el universo te llama… y también el código?</div>
+      <div class="price">Solo por $25.000 COP</div>
+    </header>
 
-                    <!-- Testimonial Start -->
-                    <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
-                        <h1 class="title pb-3 mb-5" data-translate-key="text38">Testimonial</h1>
-                        <div class="owl-carousel testimonial-carousel">
-                            <div class="text-left">
-                                <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                                <p class="fs-4 mb-4" data-translate-key="text39">I had the pleasure to work with Gerardo in an mobile App in 2016. He developed the back-end infrastructure using MySQL and PHP. The mobile Application targeted the Android public, and the focus of the application was to provide hotSpot connection through cell phone devices to those who need it. It was a very innovative idea, and we had the joy to subscribe over 1000 clients into the database. Gerardo was very committed to administer the DB and to maintain it functional despite of unexpected events that once occurred. I was very motivated to work with Gerardo because of his vast experience developing code. Something remarkable about him, was the speed in which he was able to pick up new technology and new coding languages. Gerardo is a soft spoken individual and I admire his work ethic. I strongly recommend Gerardo for anything thinking on launching his next mobile App.</p>
-                                <div class="d-flex align-items-center">
-                                    <!-- <img class="img-fluid" src="https://www.linkedin.com/in/jaigarmanj/overlay/photo/" style="width: 60px; height: 60px;"> -->
-                                    <div class="ps-3">
-                                        <a href="img/portfolio-4.jpg" data-lightbox="portfolio"></a><p class="text-primary fs-5 mb-1">Jaime Garcia</p> </a>
-                                        <i data-translate-key="text40">Strategy & Analytics Consultant</i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="text-left">
-                                <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                                <p class="fs-4 mb-4" data-translate-key="text41">Gerardo is a professional in the programming area. For Gerardo</p>
-                                <div class="d-flex align-items-center">
-                                    <!-- <img class="img-fluid" src="https://www.linkedin.com/in/ismael-e-castiblanco-163b81110/overlay/photo/" style="width: 60px; height: 60px;"> -->
-                                    <div class="ps-3">
-                                        <p class="text-primary fs-5 mb-1">Ismael E Castiblanco</p>
-                                        <i data-translate-key="text42">Sales and Marketing Manager @ GoPrestamos / Loan Originator at Buckhead Home Loans NMLS # 1616970</i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <!-- Testimonial End -->
+    <div class="kit-items">
+      <h2>✨ ¿Qué incluye tu kit?</h2>
+      <ul>
+        <li>✅ 5 calcomanías temáticas: OVNIs, alienígenas y símbolos cósmicos</li>
+        <li>✅ 1 pin metálico exclusivo</li>
+        <li>✅ 1 pin de plástico colección <span class="highlight">“Objeto Acertijo”</span></li>
+        <li>✅ 1 vela aromática con esencia <span class="highlight">“Galaxia Misteriosa”</span> (ozono + frutos rojos 🌌)</li>
+        <li>✅ 1 fidget spinner (patineta de dedos) – gira como una nave en órbita 🌀</li>
+        <li>✅ <span class="highlight">+ 1 sesión de asesoría en SOFTWARE</span> (C#, .NET, AWS, bases de datos, DevOps o tu proyecto)</li>
+      </ul>
+    </div>
 
-                    <!-- Contact Start -->
-                    <!-- <section class="py-5 wow fadeInUp" data-wow-delay="0.1s" id="contact">
-                        <h1 class="title pb-3 mb-5">Contact Me</h1>
-						<p class="mb-4">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a href="https://htmlcodex.com/contact-form">Download Now</a></p>
-                        <form>
-                            <div class="row g-3">
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control border-0 bg-secondary" id="name" placeholder="Your Name">
-                                        <label for="name">Your Name</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="email" class="form-control border-0 bg-secondary" id="email" placeholder="Your Email">
-                                        <label for="email">Your Email</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control border-0 bg-secondary" id="subject" placeholder="Subject">
-                                        <label for="subject">Subject</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <textarea class="form-control border-0 bg-secondary" placeholder="Leave a message here" id="message" style="height: 200px"></textarea>
-                                        <label for="message">Message</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
-                                </div>
-                            </div>
-                        </form>
-                    </section> -->
-                    <!-- Contact End -->
+    <p style="text-align:center; margin:1.5rem 0; color:#a0a0ff;">
+      📦 Edición limitada • Varios diseños • Envíos a todo Colombia
+    </p>
 
-                    <!-- Footer Start -->
-                    <section class="wow fadeIn" data-wow-delay="0.1s">
-                        <div class="bg-secondary text-light text-center p-5">
-                            <div class="d-flex justify-content-center mb-4">
-                                <!-- <a class="btn btn-dark btn-square mx-1" href="#"><i class="fab fa-twitter"></i></a> -->
-                                <a class="btn btn-dark btn-square mx-1" href="https://www.facebook.com/gerardo.ramos.125/"><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-dark btn-square mx-1" href="https://www.linkedin.com/in/gerardoramosvargas/"><i class="fab fa-linkedin-in"></i></a>
-                                <a class="btn btn-dark btn-square mx-1" href="https://www.instagram.com/greenlove_co/"><i class="fab fa-instagram"></i></a>
-                            </div>
-                            <!-- <div class="d-flex justify-content-center mb-3">
-                                <a class="text-light px-3 border-end" href="#">Privacy</a>
-                                <a class="text-light px-3 border-end" href="#">Terms</a>
-                                <a class="text-light px-3 border-end" href="#">FAQs</a>
-                                <a class="text-light px-3" href="#">Help</a>
-                            </div> -->
-							
-                            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-							<p class="m-0" data-translate-key="text43">&copy; All Rights Reserved.<a href="https://www.linkedin.com/in/gerardoramosvargas/" data-translate-key="text44">HTML Code Gerardo Ramos</a></p>
-                        </div>
-                    </section>
-                    <!-- Footer End -->
-                </div>
-            </div>
-        </div>
+    <a href="https://wa.me/573001234567" target="_blank" class="cta-button">
+      🛸 ¡QUIERO MI KIT OVNI + ASESORÍA!
+    </a>
 
-        
-        <!-- Back to Top -->
-        <a href="#" class="back-to-top"><i class="fa fa-angle-double-up"></i></a>
-        
-        <!-- JavaScript Libraries -->
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-        <script src="lib/wow/wow.min.js"></script>
-        <script src="lib/typed/typed.min.js"></script>
-        <script src="lib/easing/easing.min.js"></script>
-        <script src="lib/waypoints/waypoints.min.js"></script>
-        <script src="lib/counterup/counterup.min.js"></script>
-        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-        <script src="lib/isotope/isotope.pkgd.min.js"></script>
-        <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <div class="note">
+      💡 Al contactarme, indícame: cuántos kits deseas, ciudad de envío y método de pago (Nequi, Daviplata o transferencia).
+    </div>
 
-        <!-- Contact Javascript File -->
-        <!-- <script src="mail/jqBootstrapValidation.min.js"></script>
-        <script src="mail/contact.js"></script> -->
-
-        <!-- Template Javascript -->
-        <script src="js/main.js"></script>
-
-        <script type="text/javascript" src="js/translation.js"></script>
-
-        <script type="text/javascript">
-                function translatefun() {
-                    const selectedLanguage = document.getElementById('language').value;
-            
-            
-            
-                    const elementsToTranslate = document.querySelectorAll('[data-translate-key]');
-                    localStorage.setItem('lang', selectedLanguage);
-            
-                    elementsToTranslate.forEach(element => {
-                    const translationKey = element.getAttribute('data-translate-key');
-                    const translation = translations[selectedLanguage][translationKey];
-                    if (translation) {
-                        element.innerHTML = translation;
-                    }
-                    });
-                }
-        </script>
-    </body>
+    <footer>
+      <p>© 2025 Gerardo Ramos • E.S.E Hospital San Gabriel Arcángel • Ingeniero de Sistemas + Asistente de Enfermería</p>
+      <p><em>“No todos los que miran al cielo buscan respuestas… algunos ya están compilando las suyas.”</em></p>
+    </footer>
+  </div>
+</body>
 </html>
+
+   <a href="https://wa.me/573183863469" ...
+   

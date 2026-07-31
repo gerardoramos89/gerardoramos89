@@ -1,5 +1,18 @@
 # 👋 HOLA SOY GERARDO RAMOS, me pueden ayudar con un follow
 
+🧱 Technology Ecosystem Grid
+⚙️ Core Runtimes & Backends
+.NET C# Node.js TypeScript
+ASP.NET Core .NET Framework	
+🗄 Data Engineering & Messaging
+SQL Server PostgreSQL CosmosDB
+Oracle MongoDB Databricks
+☁️ Cloud & Infrastructure Ops
+Azure AWS Kubernetes
+Docker GitHub Actions Azure DevOps	
+🌐 Client-Side & Dev Tooling
+React Next.js Vite SignalR
+pnpm BiomeJS
 
 ## 👀 About Me  
 I’m a **Systems Engineer** (graduated in 2016) with over **8 years of experience** in software development. My passion lies in creating agile and efficient technology solutions that drive impact.  

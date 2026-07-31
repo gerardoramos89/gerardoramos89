@@ -1,48 +1,4 @@
-# 👋 HOLA SOY GERARDO RAMOS, me pueden ayudar con un liKE y si pueden adquierinedo este kit:
-
-🛸 Kit OVNI – Asesoria de SOFTWARE
-$25.000 COP + $5000 Envio BOGOTA (solo disponible por transferencia bancaria)
-
-✨ Incluye:
-
-5 calcomanías temáticas de OVNIs, alienígenas y símbolos espaciales
-1 pin metálico exclusivo
-1 pin de plástico colección y/o "Objeto Acertijo"
-1 vela aromática con esencia misteriosa (notas de ozono, frutos rojos y galaxia 🌌)
-1 patineta de dedos (fidget spinner) -  🌀
-📦 Edición limitada – ideal para coleccionistas, amantes del misterio y fans del universo paranormal.
-🧘‍♂️ ¡Perfecto para relajarte mientras contactas con lo desconocido tenemos variso diseños si quieres mas de un KIT!
-
-💳 Forma de pago: Transferencia bancaria (Nequi, Daviplata o cuenta tradicional).
-📬 Envíos a todo Colombia – ¡Resérvalo antes de que desaparezca en el espacio!
-
-![Imagen de WhatsApp 2025-11-28 a las 00 37 05_ce9eecbf](https://github.com/user-attachments/assets/a1cdf5b3-2476-4f0c-9c23-3664cc6ee85d)
-
-te ayudo a adquirir el Kit OVNI – Asesoría de SOFTWARE.
-
-Antes de proceder, solo para confirmar y asegurarnos de que todo esté claro:
-
-🛸 Tu Kit Incluye
-✅ 5 calcomanías temáticas (OVNIs, alienígenas, símbolos espaciales)
-✅ 1 pin metálico exclusivo
-✅ 1 pin de plástico (colección “Objeto Acertijo”)
-✅ 1 vela aromática con esencia única: ozono + frutos rojos + galaxia 🌌
-✅ 1 patineta de dedos (fidget spinner) con diseño temático OVNI 🌀
-✅ + Asesoría de SOFTWARE (¡muy útil si estás explorando desarrollo, IA o automatización!)
-💰 Precio: $25.000 COP
-📦 Varios diseños disponibles – ¡puedes pedir más de un kit si quieres!
-
-✅ Próximos pasos para reservar tu kit:
-Confírmanos:
-¿Cuántos kits deseas?
-¿Tienes preferencia de diseño en pins o calcomanías? (si aplica)
-Ciudad de envío (para calcular detalles logísticos)
-Realiza tu pago por:
-Nequi: [aquí iría el número]
-Daviplata: [aquí iría el número]
-Transferencia bancaria: [aquí irían los datos]
-Una vez realices el pago, envía el comprobante (captura o referencia) y listo:
-📦 ¡Armamos tu kit y lo despachamos a cualquier ciudad de Colombia!
+# 👋 HOLA SOY GERARDO RAMOS, me pueden ayudar con un follow
 
 
 ## 👀 About Me  
